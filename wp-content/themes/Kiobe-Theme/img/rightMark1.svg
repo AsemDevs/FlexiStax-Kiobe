@@ -1,0 +1,14 @@
+<svg id="Group_16" data-name="Group 16" xmlns="http://www.w3.org/2000/svg" width="31.92" height="31.84" viewBox="0 0 31.92 31.84">
+  <g id="donut_large-24px_3_" data-name="donut_large-24px (3)">
+    <g id="Group_12" data-name="Group 12">
+      <path id="Path" d="M0,4.848A11.2,11.2,0,0,1,9.472,14.32H14.32A16.019,16.019,0,0,0,0,0V4.848Z" transform="translate(17.6 0)" fill="#fb9d1e"/>
+      <path id="Path-2" data-name="Path" d="M9.472,0A11.2,11.2,0,0,1,0,9.472V14.32A16.019,16.019,0,0,0,14.32,0H9.472Z" transform="translate(17.6 17.52)" fill="rgba(251,157,30,0.15)"/>
+      <path id="Path-3" data-name="Path" d="M0,4.848A11.2,11.2,0,0,0-9.472,14.32H-14.32A16.019,16.019,0,0,1,0,0V4.848Z" transform="translate(14.32 0)" fill="rgba(251,157,30,0.15)"/>
+      <path id="Path-4" data-name="Path" d="M-9.472,0A11.2,11.2,0,0,0,0,9.472V14.32A16.019,16.019,0,0,1-14.32,0h4.848Z" transform="translate(14.32 17.52)" fill="rgba(251,157,30,0.15)"/>
+    </g>
+  </g>
+  <g id="done-24px_4_" data-name="done-24px (4)" transform="translate(8 8)">
+    <path id="Path-5" data-name="Path" d="M0,0H16V16H0Z" fill="none"/>
+    <path id="Path-6" data-name="Path" d="M3.733,7.067l-2.8-2.8L0,5.2,3.733,8.933l8-8L10.8,0Z" transform="translate(2.267 3.733)" fill="#fb9d1e"/>
+  </g>
+</svg>

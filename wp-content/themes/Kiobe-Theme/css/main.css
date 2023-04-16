@@ -1,0 +1,4605 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/* Start General Styles */
+
+:root {
+    --greyish-brown: #555555;
+    --dark-primary: #121315;
+    --dark-lite: #18191b;
+    --dark-secondary: #101014;
+    --bg-color: rgba(198, 198, 198, 0.05);
+    --tangerine: #ff9900;
+    --dark-tangerine: #FC6621;
+    --lightgrey: #f9f9f9;
+    --grey: #858d98;
+    --primaryGrey: #eee;
+    font-size: 16px;
+}
+
+/* to overwrite gutenberg styling */
+
+body {
+    color: var(--dark-secondary);
+    line-height: 1.47;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+ [class*="fa-"]:not([class*="fas"]) {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: -apple-system-headline, sans-serif;
+    color: var(--dark-secondary);
+}
+
+label {
+    max-width: 100%;
+    font-weight: 700;
+}
+
+h6 {
+    font-size: 0.75rem;
+}
+
+h5 {
+    font-size: 0.875rem;
+}
+
+h4 {
+    font-size: 1.125rem;
+}
+
+/* Start Utility Classes */
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 84vw !important;
+    }
+}
+
+@media (min-width: 768px) { 
+    .container {
+        max-width: 84vw !important;
+    }
+}
+
+@media (min-width: 992px) { 
+    .container {
+        max-width: 84vw !important;
+    }
+}
+
+@media (min-width: 1200px) { 
+    .container {
+        max-width: 84vw !important;
+    }
+}
+@media (min-width: 1440px) {
+    .container {
+        max-width: 84vw !important;
+    }
+}
+
+.col-offset-1-3 {
+    margin-left: 1.33333333%;
+}
+
+.orng-span {
+    color: var(--tangerine);
+}
+
+section .general-box-shadow {
+    border-radius: 8px;
+    box-shadow: 0 6px 24px 0 rgba(0, 0, 0, 0.04);
+    background-color: #ffffff;
+    transition: 0.3s;
+    height: 100%;
+}
+
+.currency-movers #myProgress {
+    width: 100%;
+    border-radius: 3px;
+    background-color: #e7e7e8;
+}
+
+.client-position #myProgress {
+    width: 100%;
+    border-radius: 3px;
+    background-color: #ef5350;
+}
+
+#myBar {
+    border-radius: 3px;
+    width: 1%;
+    height: 0.375rem;
+    background-color: #26a79a;
+}
+
+.SFProText-lite {
+    font-size: 0.813rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.SFProText-Semibold {
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    color: #101014;
+}
+
+.SFProText-Medium {
+    font-size: 0.8125rem;
+    color: #858d98;
+    font-weight: 500;
+}
+.SFProText-Medium-white {
+    font-size: 0.875rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.SFProText-bold {
+    font-size: 0.9375rem;
+    font-weight: bold;
+    text-align: center;
+    color: #101014;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+h3 .primary-point,
+h4 .primary-point {
+    width: 0.425rem;
+    height: 0.425rem;
+    border-radius: 50%;
+    display: inline-block;
+  -webkit-text-fill-color: transparent;
+    background: linear-gradient(to right, #eb2323 0%, #f69c23 100%);
+    vertical-align: middle;
+    margin-top: 0.5rem;
+}
+
+.subheading {
+    font-size: 1rem;
+    color: #ffffff;
+}
+.general-button-md {
+    padding: 0.9375rem 4.625rem;
+}
+.general-button-md,
+.general-button-lg,
+.general-button,
+.general-button-2 {
+    display: inline-block;
+    color: #FFFFFF;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--tangerine);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.general-button {
+    padding: .8rem 2.7rem;
+}
+.general-button-2 {
+    padding: 0.6875rem 1.5rem;
+}
+.general-button-lg {
+    padding: 0.75rem 3.8125rem;
+}
+.btn-group .btn-secondary:first-of-type {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 767.98px) {
+    .SFProText-Semibold {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .SFProText-Semibold {
+        font-size: 0.875rem;
+    }
+}
+
+
+
+
+
+/* End Utility Classes */
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+h2 {
+    font-size: 1.875rem;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+.page-container section>p,
+.page-container section div>p {
+    font-size: 1rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    color: #101014;
+}
+
+
+/* Site Main Section and posts Styles*/
+
+.site-main {
+    padding: 0rem;
+}
+
+.site-main .entry-title {
+    text-align: center;
+}
+
+
+/* End Site Main Section */
+
+.normalize-background {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* End General Styles */
+
+.navbar-primary .navbar-toggler {
+    border: none;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.custom-toggler.navbar-toggler {
+    border-color: rgb(255,255,255);
+}
+
+.brand-container .navbar-brand img {
+    width: 7.9375rem;
+    height: 2.2188rem;
+}
+.gradient-point {
+    background: -webkit-linear-gradient(#eb2323, #f69c23);
+    background-clip: initial;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.container.navbar-primary {
+    position: relative;
+    height: 0;
+    z-index: 18;
+}
+.fas.fa-user-check {
+    margin-right: 1rem;
+}
+
+.window-check::after,
+.user-check::after {
+    vertical-align: middle;
+    margin-right: 0.875rem;
+    content: "";
+    display:inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-repeat: no-repeat;
+    background-size: 1.5rem 1.5rem;
+}
+
+.user-check::after {
+    background-image: url('../img/user-check.svg');
+}
+.window-check::after {
+    background-image :url('../img/window-check.svg');
+}
+
+.navbar-primary .row {
+    padding: 1rem 0;
+}
+
+.navbar-primary .navbar-nav>li.menu-item>a {
+    color: #FFFFFF;
+}
+
+.navbar-primary .collapse .nav-item .nav-link:hover,
+.navbar-nav>.active>a {
+    color: #FF9900 !important;
+}
+
+.navbar-primary .navbar-nav>.active>a,
+.navbar-primary .navbar-nav>.active>a:focus,
+.navbar-primary .navbar-nav>.active>a:hover {
+    background: none;
+}
+
+.bg-dark {
+    background: none !important;
+}
+
+.navbar .navbar-collapse {
+    border: none;
+    justify-content: space-between;
+}
+
+/* .collapse.navbar-collapse .btn-group {
+    display: flex;
+    justify-content: flex-end;
+}
+*/
+.dropdown-submenu {
+	position: relative;
+}
+.dropdown-submenu .dropdown-menu {
+	top: 0; left: 95%; margin-top: -1px;
+}
+
+.navbar-primary .btn-secondary {
+    background: none;
+    border: none;
+}
+
+.navbar .btn-secondary .svg-inline--fa.fa-user-check.fa-w-20 {
+    margin-right: 0.5rem;
+    color: #fb9d1e;
+}
+
+.btn-group :not(:last-child) {
+    margin-right: 3.125rem;
+    font-size: 0.9375rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #fb9d1e;
+}
+
+.btn-group :not(:first-child) {
+    font-size: 0.9375rem;
+    font-weight: bold;
+    letter-spacing: normal;
+    color: #ffffff;
+    padding: 0.6875rem 1.25rem;
+    border-radius: 0.25rem !important;
+    background-color: var(--tangerine);
+}
+
+.navbar-primary .closebtn {
+    display: none;
+}
+
+.row.header-resp {
+    display: none;
+}
+
+.navbar-primary .dropdown-toggle::after {
+    content: none;
+}
+
+.menu-primary a {
+    vertical-align: top;
+}
+
+.menu-item-description {
+    display: table;
+    color: #ffffff;
+    opacity: 0.6;
+    font-size: 0.75rem;
+}
+
+.main-navigation li {
+    border-bottom: none;
+}
+
+.menu-icon>a::before {
+    font-family: 'Material Icons Outlined';
+    border: none;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-icon.menu-item-has-children > a::before {
+    background-color: var(--tangerine);
+}
+.fx-icon>a::before {
+    content: '\e926';
+}
+.stocks-icon>a::before {
+    content: '\e53b';
+}
+.indices-icon>a::before {
+    content: '\e6df';
+}
+.comm-icon>a::before {
+    content: '\e16a';
+}
+.crypto-icon>a::before {
+    content: '\ebc5';
+}
+.eurusd-icon>a::before {
+    content: url(../img/EURUSD.svg);
+}
+.gbpusd-icon>a::before {
+    content: url(../img/GBPUSD.svg);
+}
+.jpyusd-icon>a::before {
+    content: url(../img/JPYUSD.svg);
+}
+.audusd-icon>a::before {
+    content: url(../img/AUDUSD.svg);
+}
+.cadusd-icon>a::before {
+    content: url(../img/CADUSD.svg);
+}
+.chfusd-icon>a::before {
+    content: url(../img/CHFUSD.svg);
+}
+.about-icon>a::before {
+    content: '\e8b5';
+}
+.navbar-primary .dropdown-menu .link-dropdown {
+    text-align: center;
+}
+ul.nav li.dropdown:hover ul.dropdown-menu {
+    display: block! important;
+}
+
+
+@media (min-width: 767.98px) {
+
+    .navbar-expand-md .navbar-nav {
+        flex: 0 1 35rem;
+        justify-content: space-between;
+        margin-left: 3rem;
+    }
+    .navbar-primary .navbar-nav {
+        height: auto;
+    }
+    .navbar-primary > .row .col-md-12 {
+        padding: 0;
+    }
+    .navbar-primary .navbar-collapse .dropdown-submenu::after {
+        font-family: 'Material Icons';
+        content: "\e5cc";
+        border: none;
+        margin-left: 0;
+        position: absolute;
+        color: rgba(255, 255, 255, 0.6);
+        right: 1rem;
+        top: 1rem;
+    }
+    .navbar-primary .dropdown:hover>.dropdown-menu,
+    .navbar-primary .dropdown-submenu:hover .dropdown-menu {
+        display: block;
+        background-color: var(--dark-lite);
+    }
+    .navbar-primary .dropdown-menu {
+        background-color: var(--dark-lite);
+        width: 17rem;
+        padding: 0rem;
+        margin: 0;
+        border: none;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+ 
+    [id*='menu-item-']>#menu-item-49>a::before {
+        font-family: 'Material Icons';
+        border: none;
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+        content: '\e926';
+        background-color: var(--tangerine);
+        margin-left: 0.5rem;
+        margin-right: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .dropdown-submenu.menu-item.menu-item-has-children .dropdown-item {
+        display: flex;
+        align-items: center;
+    }
+    .menu-item-has-children.dropdown.dropdown-submenu .dropdown-menu {
+        left: 100% ;
+        top: 0;
+    }
+    .navbar-primary .menu-item.menu-item-has-children:hover {
+        background-color: var(--dark-lite);
+    }
+    .navbar-primary .dropdown-menu .dropdown-item {
+        color: #ffffff;
+    }
+    .navbar-primary .dropdown-menu .menu-item:not(.dropdown-submenu) .dropdown-item,
+    .navbar-primary .dropdown-item.dropdown-toggle {
+        padding: 0.6rem 0.6rem;
+    }
+    .navbar-primary .dropdown-item:not(.dropdown-toggle) {
+        padding: 1rem;
+    }
+    .navbar-primary .dropdown-toggle + .dropdown-menu .menu-item {
+        padding: 0;
+    }
+
+    .navbar-primary .dropdown-menu .dropdown-item:hover {
+        color: #ffffff;
+        background-color: #1f2022;
+    }
+    .navbar-primary .dropdown-menu .dropdown-item {
+        padding: 0.6rem 0.625rem 0.6rem 1rem;
+    }
+    .navbar-primary .item-arrow .dropdown-item {
+        padding: 1rem 0.625rem 1rem 1.25rem;
+    }
+    #menu-item-185 a,
+    #menu-item-290 a,
+    #menu-item-186 a {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .navbar-primary a:hover {
+        text-decoration: none;
+    }
+    .navbar-primary .navbar {
+        padding: 0;
+    }
+    .navbar-container {
+        margin: 0 auto;
+        max-width: 100vw;
+        height: 100vh;
+        z-index: 100;
+    }
+    .navbar-primary .navbar-nav {
+        margin: 5rem auto 100% !important;
+        height: 100vh
+    }
+    .menu-item-description {
+        color: var(--grey);
+        float: right;
+        font-weight: bold;
+        padding-right: 1rem;
+        opacity: 0.6;
+        font-size: 0.75rem;
+        line-height: 2.5;
+    }
+    .navbar-primary .navbar-collapse,
+    .navbar-primary .dropdown-menu {
+        padding: 1rem;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100vw !important;
+        height: 100vh;
+        overflow: hidden;
+        -webkit-transition: height .35s ease;
+        -o-transition: height .35s ease;
+        transition: height .35s ease;
+        background-color: #fff;
+        transition: 0.5s;
+    }
+    .dropdown-menu {
+		padding: .5rem 0;
+		margin: .125rem 0 0;
+	}
+	li > ul > li > ul > li > .dropdown-item {
+		padding: .25rem 3rem;
+	}
+    .navbar-primary .dropdown-menu {
+        padding: 1rem;
+        margin-top: 8rem;
+        border: none;
+    }
+
+    .navbar-primary .dropdown-menu.show {
+        width: 100% !important;
+    }
+    .dropdown-menu.show .dropdown-submenu .dropdown-item span[itemprop="name"] {
+        width: 18rem;
+        line-height: 2;
+        font-weight: 600;
+    }
+    .navbar-primary .dropdown-menu .dropdown-item {
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+    .navbar-nav .nav-link {
+        padding: 0;
+    }
+
+    .dropdown-item:hover, .dropdown-item:focus {
+        color: #000;
+    }
+
+    .menu-icon.menu-item-has-children > a::before {
+        color: white;
+        background-color: var(--tangerine);
+    }
+    .navbar-primary .navbar-brand,
+    .navbar-primary .closebtn {
+        display: block;
+        z-index: 9999;
+    }
+    .navbar-primary .brand-container {
+        position: relative;
+        z-index: 2;
+    }
+    .navbar-primary .navbar-collapse .dropdown-submenu [itemprop="name"]::after,
+    .navbar-primary .navbar-collapse .dropdown-toggle [itemprop="name"]::after {
+        font-family: 'Material Icons';
+        content: "\e5cc";
+        border: none;
+        font-size: 1.5rem;
+        line-height: 1.3;
+        position: absolute;
+        right: 0;
+    }
+    #menu-navigation-bar .menu-item .dropdown-menu.show {
+        display: flex;
+        flex-direction: column;
+        min-height: 90vh;
+    }
+    .navbar-primary li#menu-item-186 [itemprop="name"]::after {
+        content: "";
+    }
+    li#menu-item-185,
+    li#menu-item-290,
+    li#menu-item-186 {
+        margin-top: 30vh;
+        margin-bottom: 2rem;
+        border: none;
+        border-radius: 0.25rem;
+        background: rgb(251, 157, 30);
+        background: linear-gradient(to right, rgba(251, 157, 30, 1) 0%, rgba(237, 58, 35, 1) 166%);
+    }
+    .navbar-primary li#menu-item-185 .dropdown-item,
+    .navbar-primary li#menu-item-290 .dropdown-item,
+    .navbar-primary li#menu-item-186 .dropdown-item {
+        color: #fff;
+        background: none;
+        display: block;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    
+    .navbar-collapse .btn-group {
+        display: flex;
+        min-width: 92vw;
+        position: absolute;
+        top: 90vh;
+    }
+    .navbar-primary .navbar-nav .menu-item {
+        padding: 1.1875rem 0;
+        color: #000;
+        border-bottom: solid 1px rgba(0, 0, 0, 0.08);
+    }
+    .menu-item.menu-item-type-custom.menu-item-object-custom.nav-item,
+    .menu-item.menu-item-type-post_type.menu-item-object-page.nav-item {
+        position: relative;
+    }
+    /* .navbar-primary .navbar-nav .dropdown-menu {
+        height: 100%;
+        width: 100vw;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        overflow-x: hidden;
+        padding-top: 3.75rem;
+        transition: 0.5s;
+    } */
+    .navbar-primary .navbar-nav .dropdown-menu a li {
+        padding: 0.5rem 0.5rem 0.5rem 2rem;
+        text-decoration: none;
+        font-size: 1.5625rem;
+        color: #818181;
+        display: block;
+    }
+    .navbar-primary .navbar .navbar-nav>li.menu-item>a,
+    .navbar-dark .navbar-nav .show>.nav-link {
+        color: var(--dark-primary);
+        font-weight: 600;
+    }
+    .navbar-primary .navbar-dark .collapse {
+        background-color: #fff;
+    }
+    .navbar-primary .navbar .nav>li {
+        display: block;
+    }
+    .navbar-primary .navbar .nav>li img {
+        margin: auto;
+    }
+    .navbar-primary .closebtn {
+        position: absolute;
+        top: 0;
+        right: 1rem;
+        font-size: 3rem;
+        color: var(--dark-secondary);
+    }
+    .row.header-resp {
+        display: block;
+    }
+    .row.header-desk {
+        display: none;
+    }
+    .btn-group .btn-secondary:first-of-type {
+        background-color: #eee;
+        border-radius: 0.25rem;
+        color: #101014;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 990px) {
+    .btn-group :not(:last-child) {
+        margin-right: 0.625rem;
+    }
+}
+
+/* Start Header Style */
+
+#header-carousel .carousel-inner .carousel-item.active .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#header-carousel .carousel-inner .carousel-item .container .row {
+    overflow: hidden;
+}
+
+.header-bg1,
+.header-bg2,
+.header-bg3,
+.header-bg4,
+.login-carousel-bg1 {
+    background-position: center;
+    height: 43.6875rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-bg1 {
+    background-image: url(../img/bg1@2x.png);
+}
+
+.header-bg2 {
+    background-image: url(../img/bg2@2x.png);
+}
+
+.header-bg3 {
+    background-image: url(../img/bg3@2x.png);
+}
+
+.header-bg4 {
+    background-image: url(../img/bg4@2x.png);
+}
+
+#header-carousel .carousel-item .col-8 {
+    height: 43.6875rem;
+}
+
+#header-carousel .info {
+    padding: 12.4rem 1rem;
+}
+
+#header-carousel .carousel-indicators {
+    bottom: 5rem;
+    transform: translateX(-6vw);
+    right: auto;
+    left: auto;
+}
+
+#header-carousel-resp .container {
+    height: inherit;
+}
+
+#header-carousel-resp .container .row {
+    padding: 6rem 1rem;
+}
+
+
+/* Start Slider Styles */
+
+.kiobe-app .carousel-indicators li,
+.partners-container .carousel-indicators li,
+.multi-platform .carousel-indicators li,
+.carousel-indicators li {
+    width: 3.125rem;
+    height: 0.125rem;
+    border: none;
+    background-color: #d8d8d8;
+    border-radius: 0.125rem;
+}
+
+#multi-platform-carousel .carousel-item {
+    overflow: hidden;
+}
+
+.info>h1 {
+    font-size: 2.125rem;
+    font-weight: 900;
+}
+
+.info>h4 {
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.4375rem;
+}
+
+.info>h3,
+.info>h1,
+.info>h5 {
+    margin-bottom: 2rem;
+    color: #fff;
+    text-align: left;
+}
+
+.slider-button {
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.1875rem;
+    text-align: left;
+    margin-top: 1rem;
+    padding: 0.9375rem 4.0625rem;
+    border: none;
+    display: inline-block;
+    border-radius: 0.25rem;
+    background: var(--tangerine);
+}
+
+.slider-button:active {
+    border: none;
+}
+
+#header-carousel .carousel-indicators li {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 0%;
+    border: none;
+    height: 0.125rem;
+    background-color: #d8d8d8;
+    width: 3.125rem;
+    margin: 0.625rem 0.375rem;
+    cursor: pointer;
+}
+
+#header-carousel .carousel-indicators li.active,
+#header-carousel-resp .carousel-indicators li.active,
+#login-carousel .carousel-indicators li.active {
+    border-radius: 0%;
+    height: 0.125rem;
+    background: rgb(251, 157, 30);
+    background: linear-gradient(to right, rgba(251, 157, 30, 1) 0%, rgba(237, 58, 35, 1) 166%);
+    width: 3.125rem;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Header Media Query */
+
+@media (min-width: 1440px) {
+    #header-carousel .carousel-indicators {
+        transform: translateX(-6.5vw);
+    }
+}
+
+@media (max-width: 991.98px) {
+    /* #header-carousel .carousel-indicators {
+        right: 28rem;
+        top: 38rem;
+    } */
+}
+
+@media (max-width: 767.98px) {
+    .info>h3,
+    .info>h1,
+    .info>h5 {
+        text-align: center;
+    }
+    .info h2 {
+        font-size: 2.1875rem;
+    }
+    #header-carousel-resp .header-bg2 h1 {
+        font-size: 1.3rem;
+    }
+    .info p {
+        font-size: 0.9375rem;
+    }
+    .header-bg1,
+    .header-bg2,
+    .header-bg3,
+    .header-bg4 {
+        height: 90vh;
+    }
+    .header-bg1 {
+        background-image: url(../img/bg1-resp.png);
+    }
+    .header-bg2 {
+        background-image: url(../img/bg2-resp@2x.png);
+    }
+    .header-bg3 {
+        background-image: url(../img/bg3-resp@2x.png);
+    }
+    .header-bg4 {
+        background-image: url(../img/bg4-resp@2x.png);
+    }
+    .slider-button {
+        display: block;
+        text-align: center;
+    }
+    #header-carousel-resp .carousel-item,
+    #header-carousel-resp .col-12 {
+        padding: 0;
+    }
+    #header-carousel-resp h1 {
+        font-size: 1.5rem;
+    }
+    #header-carousel-resp .carousel-indicators {
+        top: 0;
+        align-items: center;
+        margin-top: 12rem;
+    }
+}
+
+
+/* End Slider Styles */
+
+
+/* End Header Style */
+
+
+/* Start page-container Styles */
+
+.page-container section {
+    padding: 4rem 1rem;
+}
+
+
+.page-container section:nth-of-type(2n) {
+    background-color: rgba(255, 255, 255);
+}
+.page-container section:nth-of-type(2n+1),
+.home-page section:last-of-type {
+    background-color: var(--bg-color);
+}
+/* .page-container section:nth-of-type(3),
+.page-container section:nth-of-type(1) {
+    background: none;
+} */
+
+.currency-carousel {
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.currency-carousel:first-of-type {
+    margin-top: -5rem;
+}
+
+.currency-carousel .carousel-track {
+    display: flex;
+    width: calc(380px * 20);
+    animation: scroll 70s linear infinite;
+}
+
+.page-container .currency-col {
+    display: flex;
+    width: 23.75rem;
+    height: 11.25rem;
+    padding: 1.5rem;
+    margin: 0 1rem;
+    border-radius: 0.8125rem;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.06);
+    background-color: #ffffff;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-380px * 10)); /* the multiplier has to be have of width */
+    }
+}
+
+
+/* Media Query */
+
+@media (max-width: 767.98px) {
+    .currency-carousel .carousel-track {
+        display: flex;
+        width: calc(380px * 20);
+        animation-play-state: running;
+        /* incase we need to stop it in smaller devices */
+    }
+    .currency-carousel .row {
+        display: block;
+    }
+    .currency-carousel .currency-col {
+        width: 50%;
+    }
+    .currency-carousel .trade-broker {
+        margin-top: 0;
+    }
+    .tabable-stocks .tab,
+    .market-insights-desktop .tab {
+        overflow-x: auto;
+    }
+    .tabable-stocks .tab::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@media (max-width: 620px) {
+    .currency-carousel .row {
+        display: block;
+    }
+    .currency-carousel .currency-col {
+        width: 100%;
+    }
+    .currency-carousel .trade-broker {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 420px) {
+    .currency-carousel .row {
+        display: block;
+    }
+    .currency-carousel .currency-col {
+        width: 18.75rem;
+        height: 7.9375rem;
+        padding: 1rem 0.75rem;
+        margin: 0 0.625rem;
+    }
+    .currency-carousel .trade-broker {
+        margin-top: 25px;
+    }
+}
+
+.currency-col .api-insights-container {
+    width: 100%;
+}
+
+.api-insights-container .api-insight-col {
+    width: 50%;
+    float: left;
+}
+.api-insights-container h6 {
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--grey);
+}
+
+.currency-col .indice-img {
+    border-radius: 50%;
+    border: 4px solid #f2f7f9;
+}
+
+.currency-col .indice-icon,
+.currency-col .indice-label {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.currency-col .indice-label {
+    padding-left: 0.625rem;
+}
+
+.currency-col .cryptoApi-graph {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+
+.currency-col .insight-header,
+.currency-col .insight-footer {
+    display: flex;
+}
+.currency-col .insight-footer h5 {
+    font-size: 0.9375rem;
+}
+
+.currency-col .insight-footer {
+    margin-top: 3.25rem;
+    flex-direction: column;
+}
+.currency-col .indice-label .SFProText-Medium {
+    display: block;
+}
+
+/* Stocks Media Query */
+@media (max-width: 575.98px) {
+    .currency-col .insight-footer {
+        margin-top: 1rem;
+    }
+    .currency-col .indice-label .SFProText-Medium {
+        display: none;
+    }
+}
+/* End Stocks Media Query */
+
+
+/* Start Stocks Section */
+
+.trade-broker {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.trade-broker .trade-broker-title {
+    text-align: center;
+    margin-top: 2.625rem;
+    margin-bottom: 2rem;
+}
+
+.trade-broker .trade-broker-body {
+    text-align: center;
+}
+.trade-broker .material-icons-outlined {
+    color: var(--tangerine);
+}
+
+
+/* Style the tab */
+
+.tab {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.education-section-desktop .calendar-tab {
+    overflow: hidden;
+}
+
+
+/* Style the buttons that are used to open the tab content */
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    cursor: pointer;
+    padding: .875rem 1.875rem;
+    transition: 0.3s;
+    width: calc(100%/5);
+}
+
+
+/* Change border color of buttons on hover */
+
+.tabable-container .tab button:hover,
+.tabable-col:hover {
+    border-bottom: 3px solid var(--tangerine);
+}
+.tabable-container .tablinks:hover span {
+    color: var(--tangerine);
+}
+
+
+/* Create an active/current tablink class */
+
+.tabable-container .tab .tablinks {
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.tabable-container .tablinks.active-tab,
+.markets-insights .nav-item .active,
+.markets-insights .tabable-boxes-container .tablinks.active-tab {
+    border-bottom: 1px solid var(--tangerine);
+}
+
+.markets-insights .nav .nav-item {
+    width: calc(100%/4);
+    overflow-x: auto;
+    flex-wrap: nowrap;
+}
+
+.markets-insights .nav-item .nav-link {
+    color: var(--dark-secondary);
+    padding: 0;
+}
+
+.markets-insights .nav-item {
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.markets-insights .nav-link.active {
+    box-shadow: none;
+    background: none;
+    border-radius: 0;
+    color: var(--tangerine);
+}
+
+.stock-api .tab>*,
+.markets-insights .tab>*,
+.platform-container .tab>* {
+    flex: 1 1 100px;
+}
+
+.stock-api button.tablinks.active-tab span,
+.trade-broker .tablinks.active-tab span,
+.markets-insights .tablinks.active-tab span,
+.multi-platform button.tablinks.active-tab span {
+    color: var(--tangerine);
+}
+
+
+/* Style the tab content */
+
+.tabcontent {
+    display: none;
+    border-top: none;
+}
+
+.tabable-stocks .stock-api {
+    height: auto;
+    width: 100%;
+}
+
+/* .tabable-stocks .stock-api .container, 
+.tabable-stocks .stock-api .container .col-md-6 {
+    padding: 0;
+} */
+
+.stock-api .stocks-chart,
+.stock-api .stocks-variances {
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+}
+
+.stock-api .stocks-variances .col-7,
+.stock-api .stocks-variances .col-11 {
+    padding-left: 0;
+}
+
+.stock-api .stocks-chart iframe{
+    width: 100%;
+    height: 28rem;
+}
+
+.stock-api .glyphicon {
+    top: 2px;
+}
+
+.stock-api .more-currencies {
+    background: none;
+    position: relative;
+    border: none;
+    font-size: 1.125rem;
+    transition: color 0.5s, transform 0.2s, background-color 0.2s;
+    outline: none;
+    border-radius: 3px;
+    margin: 0 0.625rem;
+    padding: 0.625rem;
+}
+
+.more-currencies:active {
+    transform: translateY(0.1875rem);
+}
+
+button::after,
+button::before {
+    border-radius: 0.1875rem;
+}
+
+.more-currencies {
+    background-color: transparent;
+    color: #1b1b20;
+}
+
+.more-currencies:hover {
+    background-color: transparent;
+    box-shadow: none;
+    color: #555555;
+}
+
+.more-currencies::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s, border 0.3s;
+}
+.stock-api .stocks-variances .nav-link {
+    background: none;
+    padding: 1rem;
+    padding-right: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 0;
+    font-weight: bold;
+    color: var(--dark-secondary);
+}
+#Forex .stock-api .stocks-variances .nav-link {
+    padding: 0.625rem 1rem;
+}
+
+.stocks-variances .nav-link .col-4 {
+    padding: 0;
+}
+.stock-api .stocks-variances .nav-link .row {
+    padding-left: 1rem;
+}
+
+.stocks-variances .nav-link.active {
+    background: none;
+}
+.stock-api .stocks-variances .nav-link.active {
+    background-color: rgba(198, 198, 198, 0.1);
+    border-radius: 0.375rem;
+    border-bottom: none;
+}
+.stock-api .stocks-variances .nav-link:hover {
+    background-color: rgba(198, 198, 198, 0.1);
+}
+
+.more-currencies::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 0.1875rem solid #ff9900;
+    opacity: 0;
+    z-index: -1;
+    transform: scaleX(1.1) scaleY(1.3);
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.more-currencies:hover::after {
+    opacity: 1;
+    transform: scaleX(1) scaleY(1);
+}
+
+.trade-broker .register-now {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 0.9375rem 5.8125rem;
+    border-radius: 0.25rem !important;
+    background: var(--tangerine);
+}
+.stock-api .more-currencies .material-icons-outlined {
+    color: var(--dark-secondary);
+    vertical-align: bottom;
+    font-size: 1.6rem;
+}
+
+@media (max-width: 575.98px) {
+    .stock-api .stocks-variances .SFProText-lite {
+        display: none;
+    }
+    .stock-api .stocks-variances .col-7,
+    .stock-api .stocks-variances .col-11 {
+        padding-left: 1rem;
+    }
+    .stock-api .stocks-chart, .stock-api .stocks-variances {
+        padding-top: 1rem;
+    }
+    .trade-broker .trade-broker-title {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+}
+/* End Stocks Section */
+
+
+/* Start Easy Sign Up, and interest rate Sections */
+
+.page-container .easy-signup {
+    padding: 0 1rem;
+}
+.page-container .kiobe-crypto-trading,
+.page-container .easy-signup  {
+    background-color: var(--bg-color);
+}
+
+.easy-signup .easy-signup-title {
+    text-align: center;
+    margin-top: 1.1875rem;
+    margin-bottom: 5.1875rem;
+}
+
+.easy-signup .easy-signup-col {
+    height: 5rem;
+    text-align: left;
+    margin-bottom: 1.1rem;
+}
+
+.easy-signup .easy-signup-col h4 {
+    margin-bottom: 1.1875rem;
+    font-weight: bold;
+}
+
+.easy-signup .easy-signup-col .material-icons-outlined {
+    margin-right: 0.875rem;
+    vertical-align: middle;
+    font-size: 1.5rem !important;
+}
+
+.easy-signup .easy-signup-col h6 {
+    font-size: 0.9375rem;
+}
+
+.interest-rate .interest-rate-col {
+    text-align: left;
+    margin-top: 2.25rem;
+}
+
+.easy-signup .easy-signup-col .svg-inline--fa,
+.interest-rate .interest-rate-col .svg-inline--fa {
+    color: var(--tangerine) !important;
+    margin-right: 0.625rem;
+}
+
+.easy-signup .horz-line,
+.get-confidence .horz-line,
+.interest-rate .horz-line {
+    margin-top: 2em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    width: 114%;
+    background-color: #ff9900;
+    border-radius: 0.0625rem;
+    border: 1px solid #ff9900;
+}
+
+.easy-signup .col-md-3:last-of-type .horz-line {
+    margin: 0.9rem -0.9rem;
+}
+
+.interest-rate .col-md-3:last-of-type .horz-line {
+    width: 58%;
+    position: relative;
+}
+
+.interest-rate .col-md-3:last-of-type .diamond {
+    top: -0.375rem;
+}
+
+.interest-rate .horz-line .diamond,
+.get-confidence  .horz-line .diamond,
+.easy-signup .horz-line .diamond {
+    height: 0.75rem;
+    width: 0.75rem;
+    background-color: #fb9d1e;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.12);
+    border: solid 1.1px #ffffff;
+    position: absolute;
+    margin: auto;
+    transform: rotate(45deg);
+}
+
+.register-now .glyphicon {
+    top: 0.125rem
+}
+
+.easy-signup .register-now {
+    background: none;
+    color: var(--tangerine);
+    position: relative;
+    top: 0.25rem;
+    border: none;
+    font-size: 0.75rem;
+    transition: color 0.5s, transform 0.2s, background-color 0.2s;
+    outline: none;
+}
+
+.interest-rate .register-now {
+    background: none;
+    color: var(--tangerine);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0.875rem;
+    right: 0;
+    border: none;
+    font-size: 0.75rem;
+    transition: color 0.5s, transform 0.2s, background-color 0.2s;
+    outline: none;
+}
+.interest-rate .register-now.general-button {
+    padding: 0.3125rem;
+    text-decoration: none;
+}
+.easy-signup .col-md-6:last-of-type {
+    display: flex;
+}
+.easy-signup .material-icons-outlined {
+    color: var(--tangerine);
+    vertical-align: bottom;
+    font-size: 1.6rem;
+}
+
+/* Media Query */
+
+@media (max-width: 1200px) {
+    .easy-signup .col-md-3:nth-of-type(2) .easy-signup-col {
+        margin: -0.0938rem 0
+    }
+    .easy-signup .col-md-3:nth-of-type(2) .horz-line {
+        margin-top: 2.2rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .easy-signup .container {
+        display: flex;
+        justify-content: center;
+    }
+    .easy-signup .col-md-3:last-of-type .diamond,
+    .interest-rate .col-md-3:last-of-type .diamond {
+        top: initial;
+    }
+    .interest-rate .col-md-3:last-of-type .horz-line {
+        width: 4.625rem;
+        display: inline-flex;
+        margin: 1em 0;
+    }
+    .easy-signup .col-md-3:last-of-type .horz-line {
+        width: 4.625rem;
+        display: inline-flex;
+    }
+    .interest-rate .horz-line {
+        transform: rotate(90deg);
+        margin-top: 1em;
+        display: flex;
+        width: 6.5625rem;
+        position: absolute;
+        left: -4rem;
+        top: 2.375rem;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0;
+        background-color: #ff9900;
+        border-radius: 0.0625rem;
+        border: 2px solid #ff9900;
+    }
+}
+
+
+/* Start Trade Safe Section */
+
+.trade-safe {
+    margin-top: 3em;
+}
+
+.trade-safe .col-sm-6:first-of-type {
+    height: 25rem;
+}
+.trade-safe .card-text {
+    margin-bottom: 2rem;
+}
+.trade-safe-content p {
+    margin: 1.5rem 1.75rem 2rem 0;
+}
+
+.trade-safe-content a {
+    margin-top: 2rem;
+    padding: 0.9375rem 4.0625rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.trade-safe .franklin {
+    height: 29.8125rem;
+}
+
+.trade-safe img {
+
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+.trade-safe .card {
+    background: none;
+    box-shadow: none;
+}
+
+/* Media Query */
+
+@media (max-width: 991.98px) {
+    .trade-safe-content {
+        padding-block: 0;
+    }
+    .trade-safe img {
+        margin-top: 2rem;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
+    .easy-signup .horz-line {
+        width: 120%;
+    }
+}
+
+
+/* Small devices (landscape phones, less than 768px) */
+
+@media (max-width: 767.98px) {
+    .easy-signup .horz-line {
+        transform: rotate(90deg);
+        margin-top: 1em;
+        display: flex;
+        width: 7.5rem;
+        position: absolute;
+        left: -3.75rem;
+        top: 2.375rem;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0;
+        background-color: #ff9900;
+        border-radius: 0.0625rem;
+        border: 0.125rem solid #ff9900;
+    }
+    .easy-signup .col-md-3:last-of-type .horz-line {
+        left: -1.375rem;
+        top: -4.6rem;
+    }
+    .easy-signup .col-12.col-md-3 .col-md-6:last-of-type {
+        display: none;
+    }
+    .trade-safe .card-body {
+        padding: 0;
+    }
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {
+    .trade-safe .col-sm-6:first-of-type,
+    .trade-safe .col-sm-6:last-of-type {
+        height: 14rem;
+    }
+    .trade-safe .trade-safe-content {
+        text-align: center;
+    }
+}
+
+
+/* End Trade Safe Section */
+
+
+/* End Easy Sign Up and interest-rate Sections */
+
+
+/* Start Kiobe App Section */
+
+.kiobe-app .kiobe-app-heading {
+    text-align: center;
+}
+
+.kiobe-app .kiobe-app-desktop .kiobe-app-body .group-27 {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.kiobe-app .kiobe-app-desktop .kiobe-app-body {
+    position: relative;
+    margin-bottom: 3em;
+}
+
+.kiobe-app .kiobe-app-mobile .kiobe-app-body {
+    overflow: hidden;
+}
+
+.kiobe-app .kiobe-app-desktop .kiobe-app-body .TP {
+    position: absolute;
+    top: -1em;
+    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    margin: 0 auto;
+    width: 39%;
+}
+
+.kiobe-app .kiobe-app-mobile {
+    display: none;
+}
+
+
+/* Start Kiobe App img Slider */
+
+.multi-platform-mobile .multi-platform-slide {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    clip-path: circle(0% at 0 50%);
+    overflow: hidden;
+}
+
+.multi-platform-mobile .multi-platform-slide.multi-active-slide {
+    clip-path: circle(150% at 0 50%);
+    transition: 2s;
+    transition-property: clip-path;
+}
+
+.multi-platform-mobile .carousel-item img{
+    max-width: 32rem;
+}
+
+#kiobe-app-carousel .carousel-indicators {
+    bottom: -1rem;
+}
+
+#kiobe-app-carousel .kiobe-app-body img {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.3125rem;
+}
+
+.kiobe-app-info,
+.multi-platform-info {
+    padding: 0.9375rem 0.3125rem;
+    text-align: center;
+}
+
+.kiobe-app-info h4,
+.how-to-become-partner .col-md-10 h4,
+.partners .tabcontent .col-md-10 h4 {
+    font-weight: bold;
+}
+
+.multi-platform-mobile .multi-platform-navigation {
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    bottom: 3rem;
+}
+
+.multi-platform-mobile .multi-platform-navigation {
+    margin: 0 2rem;
+}
+
+.multi-platform-btn {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 0%;
+    border: none;
+    height: 0.125rem;
+    background-color: #d8d8d8;
+    width: 3.125rem;
+    margin: 0.625rem 0.375rem;
+    cursor: pointer;
+}
+
+.multi-platform-btn.multi-active-slide {
+    border-radius: 0%;
+    height: 0.125rem;
+    background: rgb(251, 157, 30);
+    background: linear-gradient(to right, rgba(251, 157, 30, 1) 0%, rgba(237, 58, 35, 1) 166%);
+    width: 3.125rem;
+    box-shadow: 0 0 0.125rem rgba(0, 0, 0, 0.5);
+}
+
+.kiobe-app .col-md-12 {
+    overflow: hidden;
+}
+
+
+/* End Kiobe App img Slider */
+
+
+/* Media Query */
+
+@media (max-width: 767.98px) {
+    .kiobe-app .kiobe-app-body {
+        margin-bottom: 1em;
+    }
+    .kiobe-app .kiobe-app-desktop {
+        display: none;
+    }
+    .kiobe-app .kiobe-app-mobile {
+        display: block;
+    }
+}
+
+
+/* End Kiobe App Section */
+
+
+/* Start Multi-platform Section */
+
+.tabable-platforms .container {
+    background-color: #FFFFFF;
+    margin: 4.375rem 0;
+}
+
+.multi-platform-desktop .tabable-col {
+    text-align: center;
+    width: calc(100%/5);
+    padding: 2rem;
+    display: inline-block;
+}
+.multi-platform-desktop .card-text,
+.copy-top-trades .card-text,
+.kiobe-crypto-trading-desktop .card-text {
+    margin-bottom: 2rem;
+}
+.multi-platform-desktop .card {
+    padding-left: 3.125rem;
+}
+.copy-top-trades .col-sm-6,
+.markets-insights .col-md-6 {
+    height: 25rem;
+}
+
+.multi-platform .tabable-col img {
+    width: 3rem;
+    margin: 0 auto;
+    display: block;
+}
+
+.multi-platform-desktop .col-img,
+.copy-top-trades .col-img,
+.kiobe-crypto-trading .col-img {
+    height: inherit;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.tabable-container .web-img,
+.multi-platform-mobile .web-img {
+    background-image: url("../img/web.png");
+}
+
+.tabable-container .ios-img,
+.multi-platform-mobile .ios-img {
+    background-image: url("../img/ios.png");
+}
+
+.tabable-container .android-img,
+.multi-platform-mobile .android-img {
+    background-image: url("../img/android.png");
+}
+
+.tabable-container .mt-img,
+.multi-platform-mobile .mt-img {
+    background-image: url("../img/mt.png");
+}
+
+.multi-platform .multi-platform-mobile {
+    display: none;
+}
+
+.multi-platform-mobile .platform-container {
+    background-color: #FFFFFF;
+}
+
+.multi-platform-mobile .tabable-col {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+#multi-platform-carousel [class *='col-8'],
+#multi-platform-carousel [class *='col-4'] {
+    height: 28rem;
+}
+
+#multi-platform-carousel [class *='col-8'] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#multi-platform-carousel [class *='col-4'] {
+    display: flex;
+}
+
+
+/* Media Query */
+
+@media screen and (max-width: 767.98px) {
+    .multi-platform .multi-platform-mobile {
+        display: block;
+    }
+    .multi-platform .multi-platform-desktop {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .multi-platform-mobile .platform-container {
+        height: 28.125rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .multi-platform-mobile .platform-container {
+        height: 34.375rem;
+    }
+    .multi-platform-mobile .multi-platform-navigation {
+        bottom: 4rem;
+        margin: 0 1.8rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .multi-platform-mobile .multi-platform-navigation {
+        bottom: 1rem;
+        margin: 0;
+    }
+    .multi-platform-mobile .general-button {
+        padding: 0.5em;
+        font-size: 0.75rem;
+        margin-top: 0.625rem;
+    }
+}
+
+
+/* End Multi-platform Section */
+
+
+/* Start copy-top-trades Section */
+
+.copy-top-trades .copy-trade-img {
+    background-image: url("../img/copy-trade-img.png");
+}
+
+.copy-top-trades-mobile {
+    display: none;
+}
+.copy-top-trades-desktop .card {
+    padding: 7rem 0rem;
+}
+.kiobe-crypto-trading .card {
+    padding: 6rem;
+}
+.copy-top-trades-mobile, .kiobe-crypto-trading {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.copy-top-trades-mobile .col-content h2,
+.kiobe-crypto-trading-mobile .col-content h2,
+.kiobe-crypto-trading-mobile .col-content p,
+.copy-top-trades-mobile .col-content p {
+    text-align: center;
+}
+
+.copy-top-trades-desktop .col-sm-6:nth-of-type(2),
+.kiobe-crypto-trading-desktop .col-md-6:first-of-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copy-top-trades .icon-base .material-icons-outlined {
+    color: var(--tangerine);
+}
+
+/* Media Query */
+
+@media screen and (max-width: 767.98px) {
+    .copy-top-trades .copy-top-trades-mobile {
+        display: block;
+    }
+    .copy-top-trades .copy-top-trades-desktop {
+        display: none;
+    }
+    .copy-top-trades-mobile .col-img {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    .copy-top-trades-mobile .col-img img,
+    .kiobe-crypto-trading .col-img img {
+        width: 100%;
+    }
+    .copy-top-trades-mobile .col-sm-12{
+        padding: 2rem 0rem;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .copy-top-trades .col-content,
+    .kiobe-crypto-trading .col-content {
+        padding-top: 0rem;
+    }
+    .copy-top-trades-mobile {
+        margin-bottom: 0;
+    }
+}
+
+
+/* End copy-top-trades Section */
+
+
+/* Start kiobe-crypto-trading Section */
+
+.kiobe-crypto-trading .crypto-trading-img {
+    background-image: url("../img/crypto-trading.png");
+}
+
+.kiobe-crypto-trading-mobile {
+    display: none;
+}
+
+.kiobe-crypto-trading-desktop .card {
+    box-shadow: none;
+}
+.kiobe-crypto-trading-desktop .card {
+    padding: 0;
+}
+
+
+/* Media Query */
+
+@media screen and (max-width: 767.98px) {
+    .kiobe-crypto-trading .kiobe-crypto-trading-mobile {
+        display: block;
+    }
+    .kiobe-crypto-trading .kiobe-crypto-trading-desktop {
+        display: none;
+    }
+}
+
+
+/* End kiobe-crypto-trading Section */
+
+
+/* End page-container Styles */
+
+
+/* Start Footer Styles */
+
+.recline {
+    width: auto;
+    height: 0.0625rem;
+    margin: 0 0 2.8125rem;
+    opacity: 0.1;
+    background-color: #ffffff;
+}
+
+.asset-olive-container {
+    justify-content: center;
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.asset-olive-col {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.col-md-4 .olive-sub {
+    margin: -2.6875rem auto 0 auto;
+    font-size: 0.875rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.39;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+.licensed-sub {
+    margin-top: 1.875rem;
+    font-size: 0.875rem;
+    line-height: 1.39;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--tangerine);
+}
+
+.col-1 .weight-500 {
+    font-weight: 500;
+}
+
+.footer .mt-5 {
+    margin-top: 5em;
+}
+
+.footer {
+    font-size: 0.6875rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.55;
+    letter-spacing: normal;
+    color: #e7e7e7;
+    padding: 4.375rem 0;
+    background: rgb(85, 85, 85);
+    background: linear-gradient(245deg, rgba(85, 85, 85, 1) -50%, rgba(18, 19, 21, 1) 100%);
+}
+
+.footer .brand-container .row {
+    margin-top: 1.5rem;
+    margin-right: .5rem;
+}
+.footer .brand-container .row .col{
+    flex-grow: 0.12;
+    padding: 0 0.5rem;
+}
+.row.sitemap-nav .widget ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.row.sitemap-nav .widget ul li {
+    padding: 0.625rem 0;
+    font-size: 0.875rem;
+}
+.row.sitemap-nav .widget ul li:first-of-type {
+    color: rgba(255, 255, 255, 0.6);;
+    font-size: 0.875rem;
+}
+.row.sitemap-nav .widget ul li:not(:first-of-type) a {
+    color: #e7e7e7;
+    margin-bottom: 2rem;
+}
+
+/* Media Query */
+
+@media (max-width: 991.98px) {
+    .asset-olive-container {
+        display: block;
+        width: auto;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .footer {
+        font-size: 0.8125rem;
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+    }
+    .footer .row.sitemap-nav .widget li:not(:first-of-type) {
+        display: none;
+    }
+    .footer .row.sitemap-nav .widget li:first-of-type {
+        color: #fff;
+        padding: 1rem 0;
+        border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.1);
+    }
+    .footer .row.sitemap-nav .widget li:first-of-type::after {
+        font-family: 'Material Icons';
+        content: "\e5cc";
+        border: none;
+        margin-left: 0;
+        position: absolute;
+        font-size: 1.5rem;
+        color: rgba(255, 255, 255);
+        right: 1rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .footer .brand-container .row .col {
+        flex-grow: 0.1;
+        padding: 0;
+    }
+}
+
+
+
+
+/* End Footer Styles */
+
+
+/* ================== //Custom Pages Styles =====================*/
+
+.header-container {
+    padding: 6rem 0 2rem;
+}
+
+.posts-header-container {
+    padding: 2rem 0;
+}
+
+.custom-nav-bg {
+    height: 0;
+}
+
+.header-container h2 {
+    color: #ffffff;
+}
+
+.custom-header-bg {
+    padding: 3rem;
+    background-image: url('../img/trading-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.posts-header-bg {
+    background-image: url('../img/trading-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 0;
+}
+
+.posts-header-bg .header-container {
+    padding: 2rem 0;
+}
+
+.custom-header-bg .header-banner {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+
+/* Start Promotions Page */
+
+.promotions-container .promotions-desktop {
+    padding-block: 2rem;
+}
+
+.promotions-container .promotions-mobile {
+    display: none;
+}
+
+.promotions-mobile section {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.promotions-desktop .col-md-6,
+.promotions-mobile .col-md-6:first-of-type {
+    height: 19rem;
+    padding: 0;
+    background: rgb(85, 85, 85);
+    background: linear-gradient(250deg, rgba(85, 85, 85, 1) 0%, rgba(18, 19, 21, 1) 100%);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.75rem 2rem 0 rgba(0, 0, 0, 0.16);
+}
+
+.promotions-desktop .refer-friend .col-md-6,
+.promotions-desktop .interest-rate .col-md-6 {
+    margin-right: 6rem;
+}
+
+.promotions-desktop .rebate-bonus .col-md-6 {
+    margin-left: 6rem;
+}
+
+.promotions-container .card-img {
+    background-position: center;
+    background-size: cover;
+    height: 19rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.75rem 2rem 0 rgba(0, 0, 0, 0.16);
+    position: relative;
+}
+
+.promotions-mobile .card-img {
+    height: inherit;
+}
+
+.card-img h2 {
+    margin: 0;
+    color: #ffffff;
+}
+
+.promotions-container .promotions-desktop .col-md-6:not(.rebate-bonus .col-md-6) {
+    margin-right: 4rem;
+    margin-left: 1rem;
+}
+
+.promotions-container .rebate-bonus .promotions-desktop .col-md-6 {
+    margin-right: 0;
+    margin-left: 4rem;
+}
+
+.promotions-desktop .col-md-5 h2,
+.promotions-mobile .col-md-6 h2 {
+    margin-top: 0;
+}
+
+.promotions-mobile .col-md-6 p {
+    font-size: 0.85rem;
+    color: #101014;
+    line-height: 1.58;
+}
+
+.promotions-mobile .col-md-6 a {
+    display: block;
+}
+
+.card-img .subtext {
+    font-size: 1.188rem;
+    display: block;
+}
+
+.refer-friend .card-img {
+    background-image: url('../img/telegram-cloud.png');
+}
+
+.rebate-bonus .card-img {
+    background-image: url('../img/rebate-bonus.png');
+}
+
+.interest-rate .card-img {
+    background-image: url('../img/interest-rate.png');
+}
+
+.refer-friend .card-img h2 {
+    position: absolute;
+    top: 1.75rem;
+    left: 1.75rem;
+}
+
+.promotions-desktop .card-img a {
+    position: absolute;
+    bottom: 1.75rem;
+    right: 1.5rem;
+}
+
+.rebate-bonus .card-img h2,
+.interest-rate .card-img h2 {
+    position: absolute;
+    width: max-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.interest-rate .interest-rate-line {
+    margin-top: 1rem;
+}
+
+
+/* Media Query */
+
+
+/* Large devices (desktops, less than 1200px) */
+
+@media (max-width: 1199.98px) {}
+
+
+/* Medium devices (tablets, less than 992px) */
+
+@media (max-width: 991.98px) {
+    .promotions-mobile .col-md-6:nth-of-type(2) {
+        padding-block: 2rem;
+        padding-inline: 0;
+        text-align: center;
+    }
+    .promotions-container .promotions-desktop {
+        display: none;
+    }
+    .promotions-container .promotions-mobile {
+        display: block;
+    }
+    .promotions-container .interest-rate-line {
+        display: none;
+    }
+}
+
+
+/* Small devices (landscape phones, less than 768px) */
+
+@media (max-width: 767.98px) {
+    .promotions-mobile .col-md-6:first-of-type {
+        height: 15rem;
+    }
+    .navbar-default .navbar-collapse {
+        background-color: #333435;
+    }
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {
+    .promotions-mobile .col-md-6:first-of-type {
+        height: 12rem;
+    }
+}
+
+.account-types .tabable-boxes-container .container,
+.promotions-container .tabable-boxes-container .container {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+.account-types .row:first-of-type .col-md-12 {
+    text-align: center;
+}
+
+.account-types .tab>* {
+    flex: 1 1 14.25rem;
+}
+
+
+/* On mouse-over, add a deeper shadow */
+
+.account-types .card:hover,
+.education-section .card:hover {
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
+}
+
+section .card {
+    border-radius: 0.5rem;
+    box-shadow: 0 0.375rem 1.5rem 0 rgba(0, 0, 0, 0.04);
+    background-color: #ffffff;
+    transition: 0.3s;
+    border: none;
+}
+
+section .card-header {
+    background: none;
+    background: none;
+    border: none;
+}
+
+
+/* Add rounded corners to the top left and the top right corner of the image */
+
+.account-types img {
+    border-radius: 0.3125rem 0.3125rem 0 0;
+}
+
+.account-types .col-md-4 .card,
+.education-section-mobile .col-12 .card,
+.education-section-desktop .col-md-4 .card {
+    padding: 1rem;
+}
+
+.how-to-become-partner .col-sm-4 {
+    padding: 0.5rem;
+}
+
+.account-types .card .card-header {
+    text-align: center;
+}
+
+.account-types .card h1 {
+    font-weight: 900;
+}
+
+.education-section .card .card-text,
+.account-types .card .card-body {
+    margin: 1rem 0.5rem;
+}
+
+.education-section .tabable-box,
+.trade-with-kiobe .tabable-box,
+.account-types .tabable-box {
+    width: calc(100%/4);
+    border: 0.1875rem solid #eee;
+    background-color: #eeeeee;
+}
+
+.tabable-box.active-tab,
+.tabable-box.active-mode {
+    box-shadow: 0 0.125rem 0.1875rem 0 rgba(16, 16, 20, 0.06);
+    background-color: #ffffff;
+}
+
+.markets-insights .tabable-box.active-tab {
+    box-shadow: none;
+    background: none;
+}
+
+.account-types .tabable-box:last-of-type {
+    width: calc(100%/5);
+}
+
+.partners .account-types-start,
+.account-types .account-types-start {
+    border: none;
+    border-radius: 0.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin-left: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    background: var(--tangerine);
+}
+
+.account-types .card-body ul {
+    list-style-image: url('../img/Polygon.svg');
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    min-height: 15rem;
+    margin-bottom: 2rem;
+}
+
+.account-types .card-body ul li {
+    padding: 1rem;
+    border-top: solid 0.0625rem rgba(0, 0, 0, 0.08);
+}
+
+.account-types .card-body ul li:last-of-type {
+    border-bottom: solid 0.0625rem rgba(0, 0, 0, 0.08);
+    ;
+}
+
+.account-types .tabcontent,
+.how-to-become-partner .card-body,
+.account-types .tabcontent .container {
+    padding: 0;
+}
+
+.card .start-trading-accounts {
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 0.938rem;
+    color: #101014;
+    font-weight: bold;
+    display: block;
+    border-radius: 0.25rem;
+    text-align: center;
+    background-color: #eeeeee;
+}
+
+@media (max-width: 767.98px) {
+    .hide-on-mobile {
+        display: none;
+    }
+    .tablinks .orng-span {
+        color: #101014;
+    }
+    .account-types .account-types-start {
+        display: none;
+    }
+    .account-types .tab {
+        flex-wrap: nowrap;
+    }
+}
+@media (max-width: 991.98px) {
+    .account-types .account-types-start {
+        margin-left: 0;
+    }
+    .account-types .tabcontent .col-md-4 {
+        margin-bottom: 1rem;
+    }
+}
+
+
+/* End Promotions Page */
+
+
+/* Account Types Page */
+
+.call-to-action-banner .row {
+    background-color: rgb(85, 85, 85);
+    background: linear-gradient(250deg, rgba(85, 85, 85, 1) 0%, rgba(18, 19, 21, 1) 100%);
+    box-shadow: 0 0.75rem 2rem 0 rgb(0 0 0 / 16%);
+    border-radius: 0.5rem;
+}
+
+.call-to-action-banner .container .col-md-12 {
+    background-image: url('../img/account-types.png');
+    padding: 2rem 3rem;
+    border-radius: 0.5rem;
+    background-size: cover;
+}
+
+.call-to-action-banner h5 {
+    color: var(--tangerine);
+    margin-bottom: 2rem;
+}
+.call-to-action-banner h2 {
+    margin-bottom: .5rem;
+}
+
+.call-to-action-banner h3 {
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+.account-types
+
+/* End Account Types Page */
+
+
+/* Trading tools Page */
+
+.trading-tools.custom-header-bg {
+    padding: 3rem;
+    background-image: linear-gradient(235.36deg, #555555 -50%, #121315 100%);
+}
+.practice-investing,
+.trade-with-kiobe {
+    margin: 0 auto;
+    background-color: #FBFBFB !important;
+}
+.rade-with-kiobe .card-body {
+    padding: 0;
+}
+.trade-with-kiobe .tabable-box {
+    width: calc(100%/2);
+}
+.trade-with-kiobe button {
+    padding: 0.3rem 0;
+}
+.trade-with-kiobe button:first-of-type {
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+.trade-with-kiobe button:nth-of-type(2) {
+    border-radius: 0 0.25rem 0.25rem 0rem;
+}
+.trade-with-kiobe .tab {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.trade-with-kiobe img {
+    width: 120%;
+}
+.trade-with-kiobe .tabable-container .tab .tablinks.active-tab,
+.trade-with-kiobe .tabable-container .tab .tablinks.active-mode {
+    border: none;
+}
+.trade-with-kiobe h1 {
+    font-weight: bold;
+    font-size: 2.25rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.trade-with-kiobe .actionable-trading,
+.trade-with-kiobe.financial h1 {
+    font-size: 1.875rem;
+    margin-top: 0;
+}
+.trade-with-kiobe.actionable button,
+.trade-with-kiobe.financial button {
+        cursor: default;
+}
+.trade-with-kiobe .card > .row > .col-md-6,
+.trade-with-kiobe .card > .row > .col-md-5 {
+    height: 30rem;
+    display: flex;
+    align-items: center;
+}
+.trade-with-kiobe button.tablinks.active-tab span,
+.trade-with-kiobe button.tablinks.active-mode span {
+    color: var(--dark-secondary);
+}
+.trade-with-kiobe .SFProText-Semibold {
+    font-size: 0.8125rem;
+}
+.trade-with-kiobe .material-icons-outlined {
+    vertical-align: bottom;
+    margin-right: 0.5rem;
+    color: var(--dark-secondary);
+}
+.trade-with-kiobe .col-md-1 img {
+    width: 30%;
+    height: 19rem;
+    margin: 5rem 0rem 0 9rem;
+}
+.trade-with-kiobe:first-of-type .card > .row > .col-md-6:first-of-type {
+    padding-right: 3rem;
+}
+.trade-with-kiobe.actionable .card > .row > .col-md-5{
+    padding-left: 5rem;
+}
+.trade-with-kiobe .tab-resp {
+    display: none;
+}
+.trade-with-kiobe .tab-mobile {
+    display: none;
+}
+.trade-with-kiobe .web-platform {
+    display: block;
+}
+/* End Trading tools Page */
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (min-width: 767.98px) {
+    .trade-with-kiobe .mobile-dark img,
+    .trade-with-kiobe .mobile-app img {
+        width: 50%;
+    }
+    .trade-with-kiobe.actionable .card > .row > .col-md-6,
+    .trade-with-kiobe.financial .card > .row > .col-md-6 {
+        padding-right: 8rem;
+    }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .trade-with-kiobe.trading .card:first-of-type > .row > .col-md-6 {
+        padding: 0;
+    }
+    .trade-with-kiobe img {
+        width: 100%;
+    }
+    .trade-with-kiobe .mobile-app img,
+    .trade-with-kiobe .dark-mode img {
+        width: 100%;
+    }
+    .trade-with-kiobe .card .col-md-1 {
+        display: none;
+    }
+    .trade-with-kiobe.actionable .card .row {
+        flex-direction: column-reverse;
+    }
+    .trade-with-kiobe #blockrow {
+        display: block;
+    }
+    .trade-with-kiobe.actionable .card > .row > .col-md-5 {
+        padding-left: 0;
+    }
+    .trade-with-kiobe .card > .row > .col-md-5,
+    .trade-with-kiobe .card > .row > .col-md-6 {
+        height: auto;
+    }
+    .trade-with-kiobe .card .card-body,
+    .trade-with-kiobe.actionable .card .card-body,
+    .trade-with-kiobe.financial .card .card-body {
+        text-align: center;
+    }
+    .trade-with-kiobe.actionable .card .card-body .row:first-of-type,
+    .trade-with-kiobe.financial .card .card-body .row:first-of-type {
+        display: none;
+    }
+    .trade-with-kiobe .tab-desk {
+        display: none;
+    }
+    .trade-with-kiobe .tab-resp {
+        display: block;
+    }
+    .trading-tools-page .multi-platform {
+        margin-bottom: 4rem;
+    }
+    .trade-with-kiobe .web-platform {
+        display: none;
+    }
+    .trade-with-kiobe .mobile-light {
+        display: block;
+    }
+
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+}
+
+/* ================== //End Trading Page Styles =====================*/
+
+
+/* Market Page Styles */
+
+.custom-header-bg .stocks-button {
+    margin: 0.375rem;
+    padding: 0.5625rem 1.5rem 0.5rem;
+    border-radius: 1rem;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #444446;
+    display: inline-flex;
+    flex-flow: row;
+}
+
+.custom-header-bg .subheading {
+    margin-bottom: 3rem;
+}
+
+.markets-insights .tab button {
+    width: calc(100%/4);
+}
+
+.markets-insights .tabable-col img {
+    vertical-align: bottom;
+    margin-right: 1rem;
+}
+
+.trade-broker .stocks-variances .nav-link img,
+.markets-insights table td img {
+    vertical-align: bottom;
+    float: left;
+    margin-right: 1rem;
+}
+
+.markets-insights table {
+    width: 100%;
+}
+
+.markets-insights .material-icons-outlined {
+    color: var(--tangerine);
+}
+
+
+.markets-insights .tabcontent .col-content {
+    margin-top: 3.125rem;
+}
+
+.markets-insights table tr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    padding-block: .75rem;
+    display: flex;
+}
+
+.markets-insights table td,
+.markets-insights table th {
+    width: 25%;
+}
+
+.SFProText-lite,
+.markets-insights table th,
+.education-section .calendar-row .tabcontent .article span {
+    color: var(--grey);
+}
+
+.call-to-action-banner svg:not(:root).svg-inline--fa {
+    margin-right: .25rem;
+}
+
+
+/* End Market Page Styles */
+
+
+/* Education Page Styles */
+
+.education-section-desktop .tabable-boxes-container .row h3 {
+    padding: 0 0.938rem;
+    font-weight: 900;
+    position: relative;
+}
+
+.education-section .tabable-boxes-container .carousel h3 {
+    font-weight: bold;
+}
+
+.tabable-boxes-container #myCarousel h3 {
+    margin: 0;
+}
+
+.education-section .tabcontent .card-header span {
+    color: var(--grey);
+}
+
+.education-section .card-header .material-icons-outlined {
+    font-size: 1rem;
+    vertical-align: bottom;
+}
+
+.education-section .card-header .material-icons-outlined {
+    vertical-align: text-top;
+}
+
+.card-start-button .material-icons-outlined {
+    vertical-align: bottom;
+}
+
+.education-section-mobile .col-12 .card,
+.education-section-desktop .col-md-4 .card {
+    height: 9.6875rem;
+}
+
+.education-section .card-text {
+    position: relative;
+}
+
+.education-section .card-text h4 {
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.education-section .card-start-button {
+    font-size: 1rem;
+    color: var(--tangerine);
+    position: absolute;
+    top: 75%;
+    right: 10%;
+}
+
+.tabcontent .diamondLine {
+    float: left;
+}
+
+.tabcontent .col-md-11 {
+    float: right;
+}
+
+.education-section .card-header span:nth-of-type(3) {
+    margin-left: 1.5rem;
+}
+
+.card-body h4 {
+    font-weight: bold;
+}
+
+.education-section .carousel-control-prev,
+.education-section .carousel-control-next {
+    background: none;
+}
+
+.education-section-desktop .carousel-inner {
+    height: 11rem;
+    padding: 0 1rem;
+}
+
+.education-section-mobile .carousel-inner {
+    overflow: visible;
+}
+
+.carousel-item .col-md-4 {
+    height: 155px;
+}
+
+.card-group-header.row .col-6 h3 {
+    margin: .2rem auto;
+    text-align: center;
+}
+
+.carousel .card-group-header {
+    justify-content: space-between;
+    margin: 2.1rem 0 1rem 0;
+}
+
+.card-group-header.row .col-3:last-of-type {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.card-group-header.row .col-3:first-of-type {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.education-section-mobile .row.calendar-tab .col-sm-12 {
+    padding: 0;
+}
+
+
+/* .education-section-mobile .row.calendar-tab, .education-section-mobile .row.calendar-header, .education-section-mobile .row.calendar-row {
+    flex-wrap: nowrap;
+}
+*/
+
+.carousel-inner>.next.left,
+.carousel-inner>.prev.right {
+    -webkit-transition: opacity 0.6s ease-in-out;
+    -o-transition: opacity 0.6s ease-in-out;
+    transition: opacity 0.6s ease-in-out;
+    opacity: 1;
+    left: 0;
+    z-index: 2;
+}
+
+.carousel-control-next {
+    right: 5rem;
+    color: var(--dark-secondary);
+}
+
+.carousel-control-next:hover {
+    color: var(--dark-secondary);
+}
+
+.carousel-inner>.active.left,
+.carousel-inner>.active.right {
+    z-index: 1;
+}
+
+.carousel-control-prev {
+    left: 42rem;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 4;
+    width: 0;
+    top: 0;
+    color: var(--dark-secondary);
+    text-shadow: none;
+    opacity: 1;
+}
+
+section .carousel-indicators {
+    bottom: -2.5rem;
+}
+
+section .carousel-indicators li {
+    width: 0.375rem;
+    height: 0.375rem;
+    margin: 0 0.375rem 0 0;
+    border: solid 1px #fb9d1e;
+    border-radius: 0.625rem;
+    background-color: rgba(251, 157, 30, 0.2);
+}
+
+.education-section-mobile .carousel-indicators li.active {
+    background-color: #fb9d1e;
+}
+
+.education-section .carousel-item .card:hover {
+    background-color: var(--primaryGrey);
+}
+
+.kiobe-app .carousel-indicators li.active,
+.partners-container .carousel-indicators li.active,
+.multi-platform .carousel-indicators li.active {
+    background-color: #fb9d1e;
+}
+
+.carousel-control-next:hover,
+.carousel-control-prev:hover {
+    opacity: 1;
+    color: var(--dark-secondary);
+}
+
+.card-group-header .carousel-navs {
+    display: inline;
+    float: right;
+}
+
+.card-group-header .col-3 h5 {
+    font-weight: bold;
+}
+
+.card-group-header .col-3 img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.carousel-navs .cards-counter {
+    position: absolute;
+    right: 6.65rem;
+    top: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--dark-secondary);
+}
+
+.tabable-boxes-container #courses-resp .carousel-inner .carousel-item .col-md-4 {
+    padding: 0;
+}
+
+.tabable-boxes-container #courses-resp .carousel {
+    margin-top: 4rem;
+}
+
+.carousel-navs .material-icons-outlined {
+    font-size: 1rem;
+}
+
+.copy-top-trades .call-to-action-banner {
+    background: rgb(85, 85, 85);
+    background: linear-gradient(250deg, rgba(85, 85, 85, 1) 0%, rgba(18, 19, 21, 1) 100%);
+    padding: 2rem 3rem;
+    border-radius: 0.5rem;
+}
+
+.copy-top-trades .card-img {
+    background: url('../img/banner-bull.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 15rem;
+}
+
+.copy-top-trades .call-to-action-banner .general-button {
+    margin-top: 2.625rem;
+}
+
+.education-section .education-section-mobile {
+    display: none;
+}
+
+.copy-top-trades .icon-base {
+    padding: .875rem;
+    background: rgb(85, 85, 85);
+    background: linear-gradient(250deg, rgba(85, 85, 85, 1) 0%, rgba(18, 19, 21, 1) 100%);
+    width: 3.125rem;
+    height: 3.125rem;
+    margin: 0 auto;
+    border-radius: 0.8rem;
+}
+
+.copy-top-trades .boxes {
+    margin-top: 5rem;
+    margin-bottom: 8rem;
+}
+
+.copy-top-trades .boxes .col-sm-4 {
+    background-color: #fff;
+    padding: 2.5rem 1.5rem;
+    border: 0.5rem solid var(--bg-color);
+    height: 11.0625rem;
+}
+
+.copy-top-trades .icon-base+h4 {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #101014;
+    margin-top: 2rem;
+}
+
+.education-section .row .material-icons-outlined {
+    margin-right: 0.5rem;
+    vertical-align: bottom;
+}
+.education-section button.tablinks.active-tab span {
+    color: #000;
+}
+
+.education-section .fx-calculator {
+    padding: 2.5rem 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.education-section .tabcontent form .form-control {
+    border-radius: 3px;
+    border: none;
+    box-shadow: none;
+    background-color: #f5f5f5;
+}
+
+.education-section select {
+    position: relative;
+}
+
+.education-section .tabcontent {
+    margin-top: 3rem;
+}
+
+.education-section select option::after {
+    content: url("../img/EURUSD.svg");
+    position: absolute;
+    /*or absolute*/
+    z-index: 100000;
+    /*a number that's more than the modal box*/
+    left: -50px;
+    top: 10px;
+}
+
+.education-section .tabcontent#calculators-resp .card,
+.education-section .tabcontent#calculators .card {
+    padding: 1rem;
+    position: relative;
+}
+
+.education-section .tabcontent#calculators .card-boxes .col-md-3:not(:last-of-type) {
+    padding-right: .5rem;
+}
+
+.education-section .tabcontent#calculators-resp .card-boxes {
+    padding: 1rem;
+}
+
+.education-section .tabcontent .form-group span {
+    float: right;
+}
+
+.education-section .tabcontent#calculators .card-boxes .card span {
+    color: var(--grey);
+    font-size: 1rem;
+    float: right;
+    cursor: pointer;
+}
+
+.education-section .tabcontent#calculators-resp .card-boxes .card span {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.education-section .progress-bars-1 {
+    width: 24px;
+    height: 5px;
+    display: inline-block;
+    margin: 0 5px 0 0;
+    background-color: #fb9d1e;
+}
+
+.education-section .progress-bars-0 {
+    width: 24px;
+    height: 5px;
+    display: inline-block;
+    margin: 0 5px 0 0;
+    background-color: rgba(251, 157, 30, 0.2);
+}
+
+
+/* .education-section .tabcontent table {
+    width: 100%;
+}
+*/
+
+.education-section-desktop .tabcontent#calendar .insights .row {
+    border-bottom: solid 1px rgba(0, 0, 0, 0.08);
+}
+
+.education-section .tabcontent#calendar h5 img,
+.education-section .tabcontent#calendar-resp h5 img {
+    margin-right: 0.5rem;
+}
+
+.education-section-desktop .tags-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.08);
+}
+
+.education-section-desktop .tags-wrapper .tag {
+    justify-content: flex-start;
+    width: auto;
+    margin: 0 12px 0 0;
+    padding: 9px 12px 8px;
+    border-radius: 3px;
+    background-color: #eee;
+}
+
+.education-section-mobile .tags-wrapper {
+    margin-top: 2rem;
+}
+
+.education-section-mobile .tags-wrapper .tag {
+    font-weight: 600;
+    text-align: center;
+    margin: 0 .875rem 1rem 0;
+    padding: 9px 12px 8px;
+    border-radius: 3px;
+    background-color: #eee;
+}
+
+.education-section #calendar .container .row [class*="col"]:not(.col-md-12),
+.education-section #calendar-resp .container .row [class*="col"]:not([class*="12"]) {
+    display: flex;
+    align-items: center;
+    min-height: 2rem;
+    cursor: pointer;
+}
+
+.education-section #calendar .container .row [class*="col"]:not(.col-md-12,
+.col-md-4),
+.education-section #calendar-resp .container .row [class*="4"] {
+    justify-content: center;
+}
+
+.education-section #calendar-resp .container .row [class*="7"] {
+    justify-content: flex-start;
+}
+
+.education-section #calendar-resp .container .row [class*="5"] {
+    justify-content: flex-end;
+}
+
+.education-section #calendar-resp .general-box-shadow .calendar-header:nth-of-type(2n+1) [class*="4"] h5 {
+    font-weight: 600;
+    color: var(--grey);
+}
+
+.education-section #calendar-resp [class*="12"] h5,
+.education-section #calendar-resp .general-box-shadow .calendar-header:last-of-type [class*="4"] h5 {
+    font-weight: 600;
+}
+
+.education-section #calendar .container .row {
+    padding: 1rem;
+}
+
+.education-section .tabcontent#calendar-resp .calendar-tab .calendar-row {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.education-section .tabcontent#calendar-resp .calendar-tab {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.education-section .tabcontent#calendar-resp .calendar-tab .calendar-row {
+    border-bottom: solid 1px rgba(0, 0, 0, 0.08);
+}
+
+.education-section-mobile .tabcontent#calendar-resp .calendar-tab .tabcontent {
+    border-top: solid 1px rgba(0, 0, 0, 0.08);
+}
+
+.education-section-desktop .client-position .currency-movers-bar>.row,
+.education-section-mobile .client-position .currency-movers-bar>.row {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.education-section-desktop .currency-movers-bar .row .col-md-2:last-of-type {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.education-section-desktop .currency-movers-bar .row .col-md-2:first-of-type {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.education-section-mobile .client-position .col-xs-2 {
+    padding: 0;
+    text-align: center;
+}
+
+.education-section-mobile .client-position .currency-movers-bar .col-xs-8 {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.education-section-desktop .currency-movers .currency-movers-bar>.row {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 0.25rem 0;
+}
+
+.education-section .currency-movers .currency-movers-bar>.row .col-xs-2:first-of-type h5 {
+    font-weight: bold;
+}
+
+.education-section .currency-movers-bar>.row span {
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+}
+
+.education-section .currency-movers,
+.education-section .client-position {
+    padding: 2rem;
+}
+
+.education-section-mobile .client-position form .col-sm-6 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.education-section-mobile .client-position form .form-group input {
+    width: 40%
+}
+.education-section .header-container {
+    padding-bottom: 3rem;
+}
+
+
+/* Media Query */
+
+@media (min-width: 1440px) {
+    .carousel-control-prev {
+        left: 63rem;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .education-section-desktop .currency-movers .currency-movers-bar>.row,
+    .education-section-desktop .client-position .currency-movers-bar>.row {
+        display: block;
+    }
+    .education-section .education-section-desktop {
+        display: none;
+    }
+    .education-section .education-section-mobile {
+        display: block;
+    }
+    .carousel-navs .cards-counter {
+        top: .6rem;
+        right: 4.2rem;
+    }
+    .carousel-control.right {
+        right: 3.6rem;
+    }
+    .carousel-control {
+        top: .375rem;
+        right: 7.5rem;
+    }
+    .card-group-header.row .col-6 h3 {
+        font-size: 1.125rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .copy-top-trades .card-img {
+        background-position: bottom;
+        text-align: center;
+        margin: 0 auto;
+        width: 90%;
+    }
+    .copy-top-trades .call-to-action-banner {
+        padding: 1rem;
+    }
+    .copy-top-trades .boxes {
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .card-group-header.row .col-xs-6 h3 {
+        margin: .5rem auto;
+        font-size: 1.125rem;
+    }
+}
+
+
+/* End Education Page Styles */
+
+
+/* Partners Page Styles */
+
+.partners-container .header-banner h4 {
+    font-weight: 900;
+}
+
+.partners-container .header-banner h5 {
+    color: #ffffff;
+}
+
+.partners-container .header-banner .row {
+    margin-top: 3rem;
+}
+
+.partners-container .header-banner .header-banner-desktop .card {
+    text-align: left;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.08);
+    background-color: #2a2b2c;
+    border: none;
+    padding: 1rem;
+}
+
+.partners-container .header-banner .header-banner-desktop .col-sm-3 {
+    padding: 0.5rem;
+}
+.partners-desktop .tab .material-icons-outlined {
+    color: var(--dark-secondary);
+    vertical-align: bottom;
+    margin-right: 0.75rem;
+}
+.partners .tab button {
+    padding: 0;
+}
+.partners button.tabable-box {
+    width: calc(100%/4);
+    border: 3px solid #eee;
+    background-color: #eeeeee;
+}
+
+.partners .tabable-box.active-tab {
+    box-shadow: 0 2px 3px 0 rgb(16 16 20 / 6%);
+    background-color: #ffffff;
+}
+
+.account-types .tabable-box:last-of-type {
+    width: calc(100%/6);
+}
+
+.partners-desktop .tab>* {
+    flex: 1 1 200px;
+}
+
+.partners .tabcontent#ib-desk .col-md-12 {
+    padding: 0;
+}
+
+.partners #cpa-desk.tabcontent .col-content,
+.partners #hp-desk.tabcontent .col-content,
+.partners #hp-resp.tabcontent .col-content,
+.partners #cpa-resp.tabcontent .col-content {
+    padding: .875rem .875rem 1.5rem 1rem;
+    border-radius: 6px;
+    box-shadow: 0 6px 24px 0 rgba(0, 0, 0, 0.04);
+    background-color: #fff;
+}
+
+.partners .tabcontent#cpa-desk table td h5,
+.partners .tabcontent .banned-countries h5,
+.education-section .tabcontent#calculators h4,
+.education-section .currency-movers h4,
+.education-section .client-position h4,
+.partners .tabcontent#hp-desk table tr td:nth-of-type(2) h5,
+.partners .tabcontent#hp-desk table tr td:nth-of-type(1) h5,
+.partners .tabcontent table+h5 {
+    font-weight: bold;
+}
+
+.partners .tabcontent table p,
+.partners .partners-resp .col-content p:first-of-type,
+.partners .tabcontent table+h5+p+p,
+.partners .tabcontent#hp-desk .col-sm-4 p,
+.partners .tabcontent .banned-countries p:last-of-type {
+    font-size: 13px;
+    font-weight: normal;
+    color: var(--grey);
+}
+
+.partners .tabcontent table+h5+p,
+.partners .tabcontent .banned-countries p {
+    font-size: 12px;
+}
+
+.partners-container .header-banner-mobile {
+    display: none;
+}
+
+.partners .tabcontent > h2 {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.partners .tabcontent h2 .upto {
+    display: inline-flex;
+    align-items: center;
+    padding: .5rem;
+    font-size: .875rem;
+    border-radius: 0.5rem;
+    margin-left: 1rem;
+    font-weight: normal;
+    background-color: rgba(255, 153, 0, 0.1);
+}
+
+.partners .tabcontent table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.partners .tabcontent table th,
+.education-section .tabcontent table th,
+.education-section .tabcontent table td,
+.partners .tabcontent table td {
+    padding: 1rem;
+    color: var(--dark-secondary);
+}
+
+.partners .tabcontent table td h5 img {
+    vertical-align: baseline;
+}
+.partners .tabcontent h2 + h5 {
+    font-size: 1rem;
+    margin-bottom: 3.125rem;
+}
+.partners .tabcontent h5 > h2 {
+    margin-top: 5rem;
+}
+
+.partners .tabcontent table thead tr th,
+.education-section .tabcontent#calendar .calendar-header {
+    border-bottom: solid 1px rgba(0, 0, 0, 0.08);
+    padding: 1rem;
+    font-weight: 600;
+    color: var(--grey);
+}
+
+.partners-desktop .tabcontent#hp-desk table thead tr th,
+.partners-desktop .tabcontent table thead tr th:not(:first-of-type) {
+    text-align: center;
+}
+
+.partners-desktop .tabcontent#hp-desk table thead tr:first-of-type th {
+    color: var(--dark-secondary);
+}
+
+.partners-desktop .tabcontent#hp-desk table thead tr:first-of-type th:last-of-type,
+.partners-desktop .tabcontent#hp-desk table tbody tr td:nth-last-of-type(2),
+.partners-desktop .tabcontent#hp-desk table thead tr:nth-of-type(2) th:nth-last-of-type(2) {
+    border-left: solid 1px rgba(0, 0, 0, 0.08);
+}
+
+.partners-desktop .tabcontent table tr,
+.partners .tabcontent#cpa-desk table tr:not(:first-of-type) {
+    text-align: center;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.08);
+}
+
+.partners .tabcontent#cpa-desk table tr td:first-of-type,
+.partners .tabcontent#hp-resp table thead tr th,
+.partners-resp .tabcontent#hp-resp table tr {
+    text-align: left;
+}
+
+.partners .tabcontent#cpa-desk table tr td:first-of-type,
+
+.partners .partners-resp {
+    display: none;
+}
+
+.partners .tabcontent .col-md-6 img {
+    width: 100%;
+}
+
+.partners .tabcontent .col-md-6 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.partners .tabcontent,
+.partners .tabcontent .row-container.dedicated-partner {
+    margin: 2rem auto;
+}
+.tabcontent .dedicated-partner .card .card-body {
+    padding: 0 1.5rem 1.5rem;
+}
+
+.tabcontent .dedicated-partner .card .card-header {
+    padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+.partners .tabcontent .col-sm-4 {
+    padding: 1rem;
+}
+
+.partners .tabcontent#ib-resp .col-10 h4 {
+    font-weight: bold;
+}
+
+.partners-container #wl-desk .col-sm-4,
+.partners .tabcontent#hp-desk .col-sm-4,
+.how-to-become-partner .icon-base,
+.partners .tabcontent#hp-desk .col-sm-4 .card-body {
+    padding: 0;
+}
+
+.partners .tabcontent#hp-desk .col-sm-4 .card-title {
+    font-weight: bold;
+}
+
+.partners-container .row .card-body p,
+.how-to-become-partner .icon-base {
+    margin: 0;
+}
+.how-to-become-partner .icon-base .material-icons-outlined {
+    font-size: 1.5rem;
+    border-radius: 0.8rem;
+    padding: 0.8125rem; 
+    background: rgb(85, 85, 85);
+    background: linear-gradient(250deg, rgba(85, 85, 85, 1) 0%, rgba(18, 19, 21, 1) 100%);
+
+}
+
+.tabcontent .material-icons-outlined,
+.how-to-become-partner .material-icons-outlined {
+    color: var(--tangerine);
+}
+
+.how-to-become-partner .card:not(.border-light) {
+    padding: 1.5rem;
+    margin-right: 0.4688rem;
+    margin-left: 0.4688rem;
+}
+.partners-container #wl-desk .row .card {
+    padding: 1.5rem;
+    width: 384px;
+    height: 9.6875rem;
+}
+
+.how-to-become-partner .card-header .col-md-10 h4{
+    margin-bottom: 0;
+}
+.how-to-become-partner .card-body {
+    padding: 2rem 0 0 0;
+}
+.how-to-become-partner .card-body h5 {
+    margin-bottom: 1rem;
+}
+.how-to-become-partner .card-body .general-button {
+    padding: 0.6875rem 1.75rem;
+}
+
+.how-to-become-partner .card-text {
+    margin-top: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.partners .row-container {
+    margin-top: 3rem;
+}
+.partners .tabcontent#ib-desk .col-md-10 {
+    padding-left: 0;
+}
+
+.partners .tabcontent#ib-desk .col-md-6 h6 {
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.how-to-become-partner .card-header {
+    padding: 0 1rem
+}
+
+/* Posts Styles */
+
+.posts-page article[id*='post'] {
+    text-align: center;
+}
+
+.education-section .article a {
+    color: var(--dark-secondary);
+}
+
+.education-section .article .post-categories {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    color: var(--dark-secondary);
+}
+
+
+/* End Posts Styles */
+
+
+/* Media Query */
+
+@media (max-width: 991.98px) {
+    .partners-container .header-banner .header-banner-desktop .col-sm-3 {
+        width: 50%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .partners-container .header-banner .header-banner-desktop .col-sm-3:last-of-type {
+        margin-right: auto;
+    }
+    .partners .account-types-start {
+        margin-left: 0;
+    }
+
+}
+
+@media (max-width: 767.98px) {
+    .col-offset-1-3 {
+        margin-left: 0;
+        margin-top: 1.33333333%;
+    }
+    .partners .tabcontent#ib-resp .card {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    .partners .tabcontent#ib-resp .col-10 {
+        padding-left: 0;
+    }
+    .partners .tabcontent>h2 {
+        display: block;
+    }
+    .partners-container .header-banner-desktop {
+        display: none;
+    }
+    .partners-container .header-banner-mobile {
+        display: block;
+    }
+    .partners-container .header-banner .header-banner-mobile .info {
+        border-radius: 8px;
+        box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.08);
+        background-color: #2a2b2c;
+        padding: 2rem;
+    }
+    .partners .partners-desktop {
+        display: none;
+    }
+    .partners .partners-resp {
+        display: block;
+    }
+    .partners .tabcontent .col-md-6 {
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+    .partners .tabcontent .col-md-6 .general-button {
+        display: inline-block;
+    }
+    .partners .tabable-box {
+        width: calc(100%/4);
+    }
+    .partners-container .carousel-indicators {
+        bottom: -3rem;
+    }
+    .partners-container .header-banner .row {
+        margin-top: 2rem;
+    }
+    
+}
+@media (max-width: 767.98px) { 
+	.card-deck {
+	    display: block;
+	    margin-bottom: .75rem;
+	    table-layout: fixed;
+	    border-spacing: 1.25rem 0;
+	}
+	.card-deck .card {
+	    display: block;
+	    margin-bottom: .75rem;
+	}
+}
+@media (max-width: 575.98px) {
+    .tab button {
+        padding: 0.75rem 1rem
+    }
+    .partners .tabcontent .col-md-6 .general-button {
+        display: block;
+    }
+}
+
+/* End Partners Page Styles */
+
+
+/* General Media Query */
+
+@media only screen and (max-width: 1200px) {
+    .partners .account-types-start {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 991.98px) {
+    section h2 {
+        font-size: 1.25rem;
+    }
+    .col-content p {
+        font-size: 0.875rem;
+    }
+    .multi-platform .col-md-6,
+    .markets-insights .col-md-6,
+    .kiobe-crypto-trading .col-md-6 {
+        height: 20rem;
+    }
+    .copy-top-trades .col-sm-6 {
+        height: 15rem;
+    }
+    .custom-header-bg .header-banner {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .general-button {
+        display: none;
+    }
+    .general-button-md {
+        display: none;
+    }
+    .general-button-lg {
+        display: block;
+    }
+    .general-button-lg {
+        padding: 0.75rem 1.8125rem;
+
+    }
+    .account-types .col-content {
+        text-align: center;
+    }
+    .page-container section {
+        padding: 2rem 1rem;
+    }
+
+}
+
+@media (max-width: 575.98px) {
+    .custom-header-bg {
+        padding: 2.5rem 0;
+    }
+    .partners .general-button {
+        padding: 0.5rem;
+    }
+    .header-container .primary-header {
+        font-size: 1.5rem;
+    }
+    .call-to-action-banner .container .col-md-12 {
+        padding: 1rem;
+        background-position: right;
+        text-align: center;
+    }
+    .general-button-md {
+        display: none;
+    }
+    .page-container section div>p {
+        font-size: 0.75rem;
+    }
+}
+@media (min-width: 768px) { 
+    .general-button-md {
+        display:inline-block;
+    }
+    .general-button-lg {
+        display: none;
+    }
+}
+
+/* Ultra Big Screens */
+@media (min-width: 2500px) { 
+    :root {
+        font-size: 24px;
+    }
+    .user-check::after,
+    .window-check::after {
+        width: 2rem;
+        height: 2rem;
+        background-size: 2rem 2rem;
+    }
+    .easy-signup .easy-signup-col .material-icons-outlined {
+        font-size: 2.2rem !important;
+    }
+    .material-icons-outlined {
+        font-size: 1.5rem !important;
+    }
+}
+@media (min-width: 2000px) { 
+    .user-check::after,
+    .window-check::after {
+        width: 2rem;
+        height: 2rem;
+        background-size: 2rem 2rem;
+    }
+    .page-container section div>p {
+        font-size: 1.25rem;
+    }
+    .easy-signup .easy-signup-col .material-icons-outlined {
+        font-size: 2.2rem !important;
+    }
+    .material-icons-outlined {
+        font-size: 1.5rem !important;
+    }
+}
+
+/* Dashboard Styles */
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    background-color: #f5f5f5;
+    padding-top: 20px;
+}
+
+.portal-container .navbar-brand {
+    margin-right: 4rem;
+}
+
+
+/* .portal-container .navbar {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+}
+*/
+
+.sidenav a {
+    padding: 1rem 0.5rem;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.portal-container .navbar {
+    padding: 1.219rem 2rem;
+    box-shadow: 0 6px 24px 0 rgba(0, 0, 0, 0.04);
+    background-color: #fff;
+}
+
+.portal-container .main .col-md-2 {
+    background-color: #f5f5f5;
+    height: 100vh;
+}
+
+.portal-container .sidenav a {
+    font-size: 0.938rem;
+    color: var(--dark-secondary);
+}
+
+.portal-container .material-icons-outlined {
+    color: var(--grey);
+}
+
+.portal-container .sidenav a:hover,
+.portal-container .sidenav a.active,
+.portal-container .nav-item.active .material-icons-outlined {
+    color: var(--tangerine);
+}
+
+.portal-container .container-fluid,
+.portal-container .container {
+    display: block;
+}
+
+.portal-container .row {
+    align-items: center;
+}
+
+.portal-container #stats-container .navbar-nav .nav-link,
+.portal-container #stats-container h4 {
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: inherit;
+    padding: 0 1rem;
+    margin: 0;
+}
+
+.portal-container .progress {
+    height: 0.25rem;
+}
+
+.portal-container .progress-bar {
+    background-color: var(--tangerine);
+}
+
+.portal-container .col-md-3 h4 {
+    font-size: 0.875rem;
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+    color: inherit;
+}
+
+.portal-container .col-md-3 h4 img {
+    margin-right: 0.5rem;
+}
+
+.portal-container #stats-container .navbar-nav .nav-item {
+    text-align: center;
+}
+
+.portal-container #stats-container .navbar-nav .nav-item span {
+    font-size: 0.75rem;
+    color: var(--grey);
+}
+
+.portal-container #swipe.row {
+    width: 100%;
+}
+
+.portal-container .btn-primary {
+    padding: 6px;
+    border-radius: 3px;
+    background-color: #eee;
+    border: none;
+    vertical-align: super;
+}
+
+.portal-container #swiper-btn .material-icons-outlined {
+    color: #858d98;
+    vertical-align: middle;
+}
+
+.portal-container .main .material-icons-outlined,
+.markets-insights .material-icons-outlined,
+.trade-broker .material-icons-outlined {
+    vertical-align: top;
+    margin-right: .75rem;
+}
+
+.portal-container .navbar-brand {
+    padding: 0;
+}
+
+.hide-on-desktop {
+    display: none;
+}
+
+.portal-container .show>.btn-secondary.dropdown-toggle,
+.portal-container .btn-secondary {
+    background: none;
+    color: inherit;
+    border: none;
+}
+
+.portal-container .btn-secondary:not(:disabled):not(.disabled).active:focus,
+.btn-secondary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-secondary.dropdown-toggle:focus {
+    box-shadow: none;
+    border: none;
+    outline: 0;
+}
+
+.img-thumbnail {
+    padding: 0;
+    border-radius: 50%;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show>.btn-primary.dropdown-toggle {
+    background-color: #eee;
+    border: none;
+}
+
+.portal-container .btn-primary.focus,
+.portal-container .btn-primary:focus {
+    background: #eee;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+input[type=checkbox].focus,
+.custom-control.focus,
+.custom-control:focus,
+.dropdown-item:not(:disabled):not(.disabled):active,
+.dropdown-item.focus,
+.dropdown-item:focus,
+input[type=checkbox]:focus {
+    background: none;
+    box-shadow: none;
+    border: none;
+}
+
+.portal-container .nav-tabs .nav-item.show .nav-link,
+.portal-container .nav-tabs .nav-link.active {
+    background: none;
+    color: inherit;
+    border: none;
+}
+
+.portal-container .nav-tabs .nav-link:focus,
+.portal-container .nav-tabs .nav-link:hover {
+    border: none;
+}
+
+.portal-container #stats-container .dropdown-menu {
+    width: 17rem;
+    border: none;
+    box-shadow: 0 6px 24px 0 rgba(0, 0, 0, 0.04);
+    background-color: #fff;
+}
+
+.portal-container .dropdown-item.active,
+.dropdown-item:active {
+    background: none;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    background-color: var(--tangerine);
+    border: none;
+}
+
+#stats-container .nav-item .dropdown .container-fluid {
+    padding: .5rem;
+}
+
+#stats-container .nav-item .dropdown .dropdown-menu {
+    right: 0;
+    left: auto;
+}
+
+.nav-item .dropdown-menu .container-fluid .row {
+    text-align: center;
+}
+
+
+/* Media Query */
+
+
+@media (max-width: 767.98px) {
+    .show-on-mobile {
+        display: block;
+    }
+}
+
+@media (max-width: 991.98px) {}
+
+@media (max-width: 1199.98px) {}
+
+
+/* End Dashboard Styles */
+
+
+/* Login and Registration Styles */
+
+.login-container .navbar-brand {
+    font-size: 3rem;
+    margin-bottom: 3.75rem;
+}
+
+.login-container .gradient-point {
+    border-radius: 50%;
+}
+
+.login-container .card-body form>p {
+    font-size: 2.25rem;
+    font-weight: 900;
+}
+
+.login-container .form-control {
+    border: none;
+    background-color: #f5f5f5;
+    padding: 1.313rem 0.781rem;
+}
+
+.login-container .form-control::placeholder {
+    border: none;
+    background-color: #f5f5f5;
+    padding: 1.313rem 0.781rem;
+    font-size: 0.9375rem;
+    opacity: 0.3;
+}
+
+.login-container .form-outline .form-label {
+    font-size: 0.875rem;
+}
+
+.login-container .login-carousel-bg1 {
+    background-image: url('../img/login-carousel-bg1.png');
+}
+
+.login-carousel-bg1 {
+    height: 46rem;
+}
+.register-container .login-carousel-bg1 {
+    height: 66rem;
+}
+
+.login-container #login-carousel p {
+    color: #ffffff;
+}
+
+.login-container #login-carousel h3 {
+    font-size: 1.5rem;
+}
+
+.login-container .carousel-caption {
+    bottom: 9.375rem;
+    padding: 0;
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    width: 100%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    transform: translate(-50%, -50%);
+}
+
+#login-carousel .carousel-indicators {
+    margin: 0;
+    top: 83%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#login-carousel .carousel-indicators li {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 0%;
+    border: none;
+    height: 2px;
+    background-color: #d8d8d8;
+    width: 50px;
+    margin: 10px 6px;
+    cursor: pointer;
+}
+.register-container .carousel h3,
+.login-container .carousel h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.25rem;
+    color: #fff;
+}
+.login-container h5,
+.register-container .carousel h5 {
+    margin-top: 8rem;
+    color: #fff;
+}
+
+.register-container .carousel h5 {
+    margin-top: 12rem;
+}
+.login-container h1 {
+    margin-top: 4rem;
+}
+.login-container .um-form {
+    margin-top: 1rem;
+}
+.login-container .col-md-6 h3 .primary-point {
+    width: 0.325rem;
+    height: 0.325rem;
+}
+.login-container .col-md-6 h3 {
+    font-size: 1.25rem;
+    margin-bottom: 3.75rem;
+}
+
+.um-139.um {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.um-login.um-logout {
+    max-width: 50% !important;
+
+}
+
+/* Start Practice investing Page */
+
+.practice-investing .card-text,
+.careers-page .card-text {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+.practice-investing .card {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.get-confidence .how-to-become-partner .card-body {
+    padding-top: 1rem;
+}
+.get-confidence .how-to-become-partner .card-header {
+    margin-top: 1rem;
+}
+.get-confidence .how-to-become-partner .icon-base .material-icons-outlined{
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.04);
+}
+.promotions-demo-page .get-confidence {
+    padding-top: 4.375rem;
+}
+.get-confidence .border-light {
+    border-bottom: 1px solid  rgba(0, 0, 0, 0.08) !important;
+}
+.get-confidence .card-body h5 {
+    font-size: 1rem;
+}
+.get-confidence .horz-line {
+    transform: rotate(90deg);
+    width: 16rem;
+    margin-top: 11rem;
+    position: relative;
+    top: 0;
+    left: -103px;
+    outline: 1px solid rgba(0, 0, 0, 0.08);
+    border: none;
+    background: none;
+}
+.get-confidence .horz-line:last-of-type {
+    margin-top: 10rem;
+}
+.get-confidence .horz-line .diamond {
+    width: 0.5625rem;
+    height: 0.5625rem;
+}
+.get-confidence .horz-line .diamond.last-diamond {
+    left: 250px;
+    background-color: #fff;
+    border: 1.5px solid rgba(0, 0, 0, 0.08);
+}
+.promotions-demo-page .know-kiobe {
+    background-color: #FBFBFB !important;
+}
+.know-kiobe .know-kiobe-list {
+    padding-left: 1rem;
+    margin-top: 4rem;
+}
+.know-kiobe .know-kiobe-list .know-item {
+    padding: 1rem;
+    list-style-image: url(../img/diamonList.svg);
+    list-style-position: outside;
+}
+.know-kiobe .know-kiobe-list .know-item span{
+    position: relative;
+    bottom: 0.625rem;
+}
+@media (min-width: 1620px) {
+    .get-confidence .horz-line:last-of-type {
+        margin-top: 7rem;
+    }
+    .get-confidence .horz-line:last-of-type .diamond.last-diamond {
+        left: 247px;
+    }
+    .get-confidence .horz-line:last-of-type .diamond:first-of-type {
+        left: 58px;
+    }
+}
+
+/* End Practice investing Page */
+
+
+
+/* End Login and Registration Styles */
+
+/* Careers Page Style */
+.careers-page .kiobe-positions {
+    background-color: var(--bg-color) !important;
+}
+
+.kiobe-positions .card .col-md-6:first-of-type {
+    margin-bottom: 10rem;
+}
+
+.jobs-tabs .nav-item {
+    text-align: center;
+    background-color: #EEEEEE;
+    width: calc(100% / 6);
+}
+
+.jobs-tabs .nav-pills .nav-link {
+    border: 4px solid #EEEEEE;
+    color: var(--dark-secondary);
+}
+
+.jobs-tabs .nav-link.active {
+    background-color: #fff;
+    color: var(--dark-secondary);
+    border: 4px solid #EEEEEE;
+    border-radius: 4px;
+}
+.jobs-tabs .nav {
+    padding: 1rem 0;
+}
+.jobs-tabs .nav-pills .nav-link:hover {
+    background-color: #fff;
+    border: 4px solid #EEEEEE;
+    border-radius: 4px;
+}
+
+.jobs-tabs .accordion .btn-link {
+    color: var(--dark-secondary);
+    font-size: 1.25rem;
+    padding: 1rem 0 0 0;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.btn:focus, .btn.focus {
+    box-shadow: none;
+}
+.btn-link:focus, .btn-link.focus {
+    color: var(--dark-secondary);
+    text-decoration: none;
+}
+.jobs-tabs .accordion .tag a,
+.jobs-tabs .accordion .btn-link:hover {
+    color: var(--dark-secondary);
+}
+
+.jobs-tabs .accordion .material-icons-outlined {
+    color: var(--tangerine);
+    margin-right: 0.5rem;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.jobs-tabs .accordion .tag {
+    margin-right: 2rem;
+    color: var(--grey);
+    font-size: 1rem;
+}
+
+.jobs-tabs .card-body ul {
+    list-style: none;
+    padding-left: 1rem;
+}
+.jobs-tabs .card-body ul li {
+    padding: 0.2rem;
+}
+
+.jobs-tabs .card-body ul li::before {
+    content: "\2022"; 
+    color: var(--tangerine);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+@media (max-width: 991.98px) {
+    .jobs-tabs .nav-pills .nav-item {
+        width: auto
+    }
+}
+@media (max-width: 575.98px) {
+    .kiobe-positions .card .col-md-6:first-of-type {
+        margin-bottom: 5rem;
+    }
+}
+
+/* Careers Page Style */
+
+/* Legal Documents */
+.legaldocuments-page {
+    background-color: #fbfbfb;
+}
+.legaldocuments .card-deck {
+    margin-top: 1rem;
+}
+.legaldocuments .material-icons-outlined {
+    color: var(--tangerine);
+}
+.legaldocuments .card-body {
+    padding: 2rem 1.375rem;
+}
+
+.legaldocuments h4 {
+    margin-bottom: 0;
+}
+
+/* End Legal Documents */
