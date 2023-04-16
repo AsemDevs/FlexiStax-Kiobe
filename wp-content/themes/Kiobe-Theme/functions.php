@@ -139,44 +139,154 @@ function footer_widget_menus()
 
 add_action('widgets_init', 'footer_widget_menus');
 
-function kiobe_theme_options_page() {
-    ?>
-    <div class="wrap">
-        <h1><?php echo esc_html(get_admin_page_title()); ?></h1>
-        <form action="options.php" method="post">
-            <?php
-            settings_fields('kiobe_theme_options_group');
-            do_settings_sections('kiobe_theme_options_page');
-            submit_button('Save Settings');
-            ?>
-        </form>
-    </div>
-    <?php
-}
-
-
 function kiobe_theme_options_init()
 {
-    // Register the setting
-    register_setting('kiobe_theme_options_group', 'kiobe_copy_top_trades_post_id');
+    // Register settings and other existing code here
 
-    // Add a settings section
-    add_settings_section('kiobe_copy_top_trades_section', 'Copy Top Trades Section', null, 'kiobe_theme_options_page');
+    // Add a new section for the reusable sections
+    add_settings_section('kiobe_reusable_sections', __('Reusable Sections', 'kiobe'), 'kiobe_reusable_sections_text', 'kiobe_theme_options_page');
 
-    // Add a settings field
-    add_settings_field('kiobe_copy_top_trades_post_id', 'Post ID', 'kiobe_copy_top_trades_post_id_field_callback', 'kiobe_theme_options_page', 'kiobe_copy_top_trades_section');
+    // Add a setting for the reusable sections
+    register_setting('kiobe_theme_options_group', 'kiobe_theme_options', 'kiobe_theme_options_validate');
 }
-add_action('admin_init', 'kiobe_theme_options_init');
 
-function kiobe_copy_top_trades_post_id_field_callback()
+// This function displays the form for the theme options.
+function kiobe_theme_options_page()
 {
-    $post_id = get_option('kiobe_copy_top_trades_post_id', '');
 ?>
-    <input type="text" name="kiobe_copy_top_trades_post_id" value="<?php echo esc_attr($post_id); ?>">
+    <div class="wrap">
+        <h1>Kiobe Theme Options</h1>
+        <form method="post" action="options.php">
+            <?php
+    settings_fields('kiobe_theme_options_group');
+            $options = get_option('kiobe_theme_options');
+            ?>
+
+            <table class="form-table">
+                <tr valign="top">
+                    <th scope="row">Copy Top Trades section post ID</th>
+                    <td><input type="number" min="1" step="1" name="kiobe_theme_options[copy_top_trades_post_id]" value="<?php echo isset($options['copy_top_trades_post_id']) ? esc_attr($options['copy_top_trades_post_id']) : ''; ?>" /></td>
+                </tr>
+                <tr valign="top">
+                    <th scope="row">Kiobe Crypto Trading section post ID</th>
+                    <td><input type="number" min="1" step="1" name="kiobe_theme_options[kiobe_crypto_trading_post_id]" value="<?php echo isset($options['kiobe_crypto_trading_post_id']) ? esc_attr($options['kiobe_crypto_trading_post_id']) : ''; ?>" /></td>
+                </tr>
+            </table>
+
+            <?php submit_button(); ?>
+        </form>
+    </div>
 <?php
 }
 
-function kiobe_theme_options_menu() {
+
+function kiobe_theme_options_validate($input)
+{
+    $output = array();
+
+    // Save the post ID for the Copy Top Trades section
+    $output['copy_top_trades_post_id'] = intval($input['copy_top_trades_post_id']);
+
+    // Save the post ID for the Kiobe Crypto Trading section
+    $output['kiobe_crypto_trading_post_id'] = intval($input['kiobe_crypto_trading_post_id']);
+
+    return $output;
+}
+
+
+// This function adds the theme options page to the admin menu.
+function kiobe_theme_options_menu()
+{
     add_theme_page('Kiobe Theme Options', 'Kiobe Theme Options', 'manage_options', 'kiobe_theme_options_page', 'kiobe_theme_options_page');
 }
+
+
+
+function kiobe_reusable_sections_text()
+{
+    echo '<p>' . __('Choose reusable sections for different parts of the site.', 'kiobe') . '</p>';
+}
+
+add_action('admin_init', 'kiobe_theme_options_init');
+
+
+
+function kiobe_reusable_section_select($section_name, $section_label)
+{
+    $options = get_option('kiobe_theme_options');
+    $selected_post_id = isset($options[$section_name]) ? $options[$section_name] : '';
+
+    // Fetch all reusable sections
+    $args = array(
+        'post_type' => 'reusable_sections',
+        'post_status' => 'publish',
+        'posts_per_page' => -1,
+    );
+    $query = new WP_Query($args);
+
+    // Display the select field
+    echo '<label for="' . $section_name . '_post_type">' . $section_label . ' Post Type</label>';
+    echo '<select name="kiobe_theme_options[' . $section_name . '_post_type]" id="' . $section_name . '_post_type">';
+    echo '<option value="">Select a reusable section</option>';
+    if ($query->have_posts()) {
+        while ($query->have_posts()) {
+            $query->the_post();
+            $selected = selected($selected_post_id, get_the_ID(), false);
+            echo '<option value="' . get_the_ID() . '" ' . $selected . '>' . get_the_title() . '</option>';
+        }
+        wp_reset_postdata();
+    }
+    echo '</select>';
+
+    // Display the input field for the post ID
+    echo '<label for="' . $section_name . '_post_id">' . $section_label . ' Post ID</label>';
+    echo '<input type="number" name="kiobe_theme_options[' . $section_name . '_post_id]" id="' . $section_name . '_post_id" value="' . $selected_post_id . '">';
+}
+
+
+
+// Kiobe Reusable Sections
+
+function kiobe_register_reusable_sections_post_type()
+{
+    $labels = array(
+        'name' => _x('Reusable Sections', 'Post Type General Name', 'kiobe'),
+        'singular_name' => _x('Reusable Section', 'Post Type Singular Name', 'kiobe'),
+        'menu_name' => __('Reusable Sections', 'kiobe'),
+        'parent_item_colon' => __('Parent Reusable Section:', 'kiobe'),
+        'all_items' => __('All Reusable Sections', 'kiobe'),
+        'view_item' => __('View Reusable Section', 'kiobe'),
+        'add_new_item' => __('Add New Reusable Section', 'kiobe'),
+        'add_new' => __('Add New', 'kiobe'),
+        'edit_item' => __('Edit Reusable Section', 'kiobe'),
+        'update_item' => __('Update Reusable Section', 'kiobe'),
+        'search_items' => __('Search Reusable Section', 'kiobe'),
+        'not_found' => __('Not found', 'kiobe'),
+        'not_found_in_trash' => __('Not found in Trash', 'kiobe'),
+    );
+
+    $args = array(
+        'label' => __('reusable_sections', 'kiobe'),
+        'description' => __('Reusable sections for various parts of the site', 'kiobe'),
+        'labels' => $labels,
+        'supports' => array('title', 'editor', 'revisions'),
+        'taxonomies' => array(),
+        'hierarchical' => false,
+        'public' => true,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'show_in_nav_menus' => true,
+        'show_in_admin_bar' => true,
+        'menu_position' => 5,
+        'can_export' => true,
+        'has_archive' => false,
+        'exclude_from_search' => true,
+        'publicly_queryable' => true,
+        'capability_type' => 'post',
+    );
+
+    register_post_type('reusable_sections', $args);
+}
+add_action('init', 'kiobe_register_reusable_sections_post_type', 0);
+
 add_action('admin_menu', 'kiobe_theme_options_menu');
